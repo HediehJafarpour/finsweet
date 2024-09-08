@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>finsweet-Home</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <style>
+      @font-face {
+        font-family: "poppins";
+        src: url(./public/font/Poppins-Regular.ttf) format("ttf");
+        src: url(./public/font/Poppins-Regular.woff) format("woff");
+      }
+      * {
+        font-family: "poppins";
+      }
+      .menu {
+        display: none;
+      }
+      .menu.active {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--project -->
+    <!-- wrapper -->
+    <div class="overflow-hidden dark:bg-[#1C1E53] relative">
+      <!-- first-page -->
+      <div
+        class="w-full bg-[#1C1E53] dark:bg-[#101237] flex flex-col h-fit pb-[0px] box-border"
+      >
+        <!-- header -->
+        <div class="w-full flex flex-col h-fit pb-[40px] box-border">
+          <!-- header -->
+          <div
+            class="grid grid-cols-1 bg-[#1C1E53] dark:bg-[#101237] w-full h-[35px] grid-rows-1 px-[30px] pt-4 pr-[10px]"
+          >
+            <div class="w-[200px] h-full justify-self-start mt-2 row-start-1">
+              <img class="w-[122px]" src="./public/images/Logo.png" alt="" />
+            </div>
+
+            <button
+              id="menuButton"
+              class="w-9 h-9 bg-blue-500 tab:hidden text-white rounded-md focus:outline-none justify-self-end row-start-1"
+            >
+              ☰
+            </button>
+
+            <div
+              class="tab:flex mobile:hidden flex-row gap-x-8 w-[70%] h-full row-start-1 justify-self-end justify-end box-borded"
+            >
+              <nav
+                class="tab:flex mobile:hiddem flex-row-nowrap gap-x-5 box-border justify-items-end pt-[10px] leading-[28px]"
+              >
+                <a
+                  href="./home.html"
+                  class="block h-7 w-fit items-center text-[#ffff] hover:border-b-2 hover:border-[#BBBBCB] text-sm font-bold"
+                  >Home</a
+                >
+                <a
+                  href="./aboutus.html"
+                  class="block h-7 text-[#BBBBCB] min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
+                  >About us</a
+                >
+                <a
+                  href="./features.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >Features</a
+                >
+                <a
+                  href="./pricing.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >Pricing</a
+                >
+                <a
+                  href="./FAQ.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >FAQ</a
+                >
+                <a
+                  href="./blog.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >Blog</a
+                >
+              </nav>
+              <a
+                href="./contactUs.html"
+                class="block text-[#ffff] font-medium border-[#F4F6FC] text-sm min-w-[120px] text-center h-[40px] rounded-[41px] border-2 border-[#5c5d83] pt-[4px] leading-[28px]"
+                >Contsct us</a
+              >
+            </div>
+          </div>
+          <!-- menu -->
+          <div
+            id="menu"
+            class="menu inset-0 bg-gray-800 bg-opacity-90 flex-col items-center justify-center text-white text-3xl mobile:fixed tab:hidden pt-[100px] z-20"
+          >
+            <a
+              href="./home.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Home</a
+            >
+            <a
+              href="./aboutus.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >About Us</a
+            >
+            <a
+              href="./features.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Features</a
+            >
+            <a
+              href="./pricing.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Pricing</a
+            >
+            <a
+              href="./FAQ.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >FAQ</a
+            >
+            <a
+              href="./blog.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Blog</a
+            >
+            <a
+              href="./contactUs.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Contact Us</a
+            >
+            <button
+              id="closeButton"
+              class="absolute top-4 right-4 text-2xl leading-normal"
+            >
+              ✖
+            </button>
+          </div>
+          <!-- end menu -->
+          <!--end header -->
+        </div>
+        <!-- menu -->
+        <div
+          id="menu"
+          class="menu inset-0 z-20 bg-gray-800 bg-opacity-90 flex-col items-center justify-center text-white text-3xl mobile:fixed tab:hidden pt-[100px]"
+        >
+          <a href="#" class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Home</a
+          >
+          <a
+            href="./aboutus.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >About Us</a
+          >
+          <a
+            href="./features.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Features</a
+          >
+          <a
+            href="./pricing.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Pricing</a
+          >
+          <a
+            href="./FAQ.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >FAQ</a
+          >
+          <a
+            href="./blog.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Blog</a
+          >
+          <a
+            href="./contactUs.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Contact Us</a
+          >
+          <button
+            id="closeButton"
+            class="absolute top-4 right-4 text-2xl leading-normal"
+          >
+            ✖
+          </button>
+        </div>
+        <!-- end menu -->
+        <!--end header -->
+      </div>
+      <!-- fAQ -->
+      <div
+        class="w-full flex mobile:flex-col overflow-hidden tab:flex-row bg-[#ffff] dark:bg-[#1C1E53] tab:itemes-center gap-x-[20px] mt-[50px] mb-[100px]"
+      >
+        <div
+          class="w-[20%] m-[20px] gap-x-[15px] mobile:mx-[30px] tab:mx-auto min-w-[300px]"
+        >
+          <h3
+            class="text-[38px] w-fit text-[#282938] dark:text-[#fff] font-medium leading-[56px]"
+          >
+            Frequently asked questions
+          </h3>
+          <p class="text-[15px] mt-[20px] text-[#2405F2]">
+            Contact us for more info
+          </p>
+        </div>
+        <div class="max-w-lg mx-auto overflow-hidden">
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap mx-auto flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                01
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:text-[18px] mobile:min-w-[150px]"
+              >
+                How much time does it take?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer1')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer1"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                02
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:ml-[20px] mobile:ml-[10px] tab:text-[18px] mobile:min-w-[150px]"
+              >
+                What is your class naming convention?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer2')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer2"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                03
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:text-[18px] mobile:min-w-[150px]"
+              >
+                How do you communicat?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer3')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer3"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                04
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:text-[18px] mobile:ml-[10px] tab:ml-[20px] mobile:min-w-[150px]"
+              >
+                I have a bigger project can you handel it?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer4')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer4"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                05
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:ml-[20px] mobile:ml-[10px] tab:text-[18px] mobile:min-w-[150px]"
+              >
+                What is your class naming convection?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer5')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer5"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div
+        class="w-full flex flex-wrap mt-[30px] bg-[#1C1E53] dark:bg-[#101237] justify-center"
+      >
+        <div class="tab:w-[40%] h-[200px] mx-auto">
+          <div class="w-full mt-[40px] tab:pl-[60px]">
+            <img src="./public/images/Logo.png" alt="" />
+          </div>
+          <div class="w-full mt-[20px] text-[#fff] tab:pl-[60px] text-[15px]">
+            <p class="w-[380px]">
+              We are always open to discuss your project and improve your online
+              presence.
+            </p>
+          </div>
+          <div
+            class="w-[80%] mobile:min-w-[450px] tab:min-w-[480px] bg-[#FCD980] mx-auto flex flex-row h-[80px] tab:p-[10px] mt-[20px] mobile:ml-[0px] tab:mx-auto mb-[20px] rounded-[9px]"
+          >
+            <div
+              class="w-[45%] flex flex-col text-[#282938]  mx-auto"
+            >
+              <h4 class="font-medium text-[16px]">Email me at</h4>
+              <p class="block">contact@website.com</p>
+            </div>
+            <div
+              class="w-[45%] flex flex-col text-[#282938]  mx-auto"
+            >
+              <h4 class="font-medium text-[16px]">Call us</h4>
+              <p class=" ">0927 6277 28525</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mobile: tab:w-[40%] h-[200px] mx-auto text-[#fff] mb-[20px]"
+        >
+          <h2 class="w-full pl-[10px] text-[28px] mt-[40px] font-medium">
+            Lets Talk!
+          </h2>
+          <p class="w-[400px] opacity-50 pl-[10px] text-[13px]">
+            We are always open to discuss your project, improve your online
+            presence and help with your UX/UI design challenges.
+          </p>
+          <div
+            class="flex flex-row flex-nowrap gap-x-[20px] pl-[10px] mt-[10px]"
+          >
+            <img src="./public/images/icon/1.png" alt="" />
+            <img src="./public/images/icon/2.png" alt="" />
+            <img src="./public/images/icon/3.png" alt="" />
+            <img src="./public/images/icon/4.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="w-full bg-[#fff] dark:bg-[#1C1E53] flex text-[#282938] dark:text-[#fff] pb-[20px]"
+        >
+          <div class="w-[50%]"><p>Copyright 2022, Finsweet.com</p></div>
+          <nav
+            class="tab:flex mobile:hidden flex-row gap-x-5 w-[50%] box-border justify-end pr-[20px] leading-[28px] font-medium text-center"
+          >
+            <a
+              href="#"
+              class="block h-7 w-fit items-center hover:border-b-2 hover:border-[#BBBBCB] text-sm"
+              >Home</a
+            >
+            <a
+              href="./aboutus.html"
+              class="block h-7 min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
+              >About us</a
+            >
+            <a
+              href="./features.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Features</a
+            >
+            <a
+              href="./pricing.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Pricing</a
+            >
+            <a
+              href="./FAQ.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >FAQ</a
+            >
+            <a
+              href="./blog.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Blog</a
+            >
+          </nav>
+        </div>
+      </div>
+      <!--end footer -->
+    </div>
+    <!-- darkmod -->
+    <button
+      class="btn w-[200px] text-[#fff] w-[80px] bg-[#454545] fixed top-80"
+    >
+      Dark
+    </button>
+
+    <!--end wrapper -->
+    <!--end project -->
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const menu = document.getElementById("menu");
+      const closeButton = document.getElementById("closeButton");
+
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      closeButton.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    </script>
+    <script>
+      let btn = document.querySelector(".btn");
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+    <script>
+      function toggleAnswer(answerId) {
+        const answer = document.getElementById(answerId);
+
+        if (answer.style.display === "none" || answer.style.display === "") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

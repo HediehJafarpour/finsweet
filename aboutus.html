@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finsweet-AboutUs</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <style>
+      @font-face {
+        font-family: "poppins";
+        src: url(./public/font/Poppins-Regular.ttf) format("ttf");
+        src: url(./public/font/Poppins-Regular.woff) format("woff");
+      }
+      * {
+        font-family: "poppins";
+      }
+      .menu {
+        display: none;
+      }
+      .menu.active {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body >
+    <!--project  -->
+    <div class="overflow-hidden dark:bg-[#1C1E53] relative ">
+      <!-- header -->
+      <div class="w-full flex flex-col h-fit pb-[40px] box-border">
+        <!-- header -->
+        <div
+          class="grid grid-cols-1 bg-[#1C1E53] dark:bg-[#101237] w-full h-[75px] grid-rows-1 px-[30px] pt-4 pr-[10px]"
+        >
+          <div class="w-[200px] h-full justify-self-start mt-2 row-start-1">
+            <img class="w-[122px]" src="./public/images/Logo.png" alt="" />
+          </div>
+
+          <button
+            id="menuButton"
+            class="w-9 h-9 bg-blue-500 tab:hidden text-white rounded-md focus:outline-none justify-self-end row-start-1"
+          >
+            ☰
+          </button>
+
+          <div
+            class="tab:flex mobile:hidden flex-row gap-x-8 w-[70%] h-full row-start-1 justify-self-end justify-end box-borded"
+          >
+            <nav
+              class="tab:flex mobile:hiddem flex-row-nowrap gap-x-5 box-border justify-items-end pt-[10px] leading-[28px]"
+            >
+              <a
+                href="./home.html"
+                class="block h-7 w-fit items-center text-[#ffff] hover:border-b-2 hover:border-[#BBBBCB] text-sm font-bold"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="block h-7 text-[#BBBBCB] min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
+                >About us</a
+              >
+              <a
+                href="./features.html"
+                class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                >Features</a
+              >
+              <a
+                href="./pricing.html"
+                class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                >Pricing</a
+              >
+              <a
+                href="./FAQ.html"
+                class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                >FAQ</a
+              >
+              <a
+                href="./blog.html"
+                class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                >Blog</a
+              >
+            </nav>
+            <a
+              href="./contactUs.html"
+              class="block text-[#ffff] font-medium border-[#F4F6FC] text-sm min-w-[120px] text-center h-[40px] rounded-[41px] border-2 border-[#5c5d83] pt-[4px] leading-[28px]"
+              >Contsct us</a
+            >
+          </div>
+        </div>
+        <!-- menu -->
+        <div
+          id="menu"
+          class="menu inset-0 bg-gray-800 bg-opacity-90 flex-col items-center justify-center text-white text-3xl mobile:fixed tab:hidden pt-[100px] z-20"
+        >
+          <a
+            href="./home.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Home</a
+          >
+          <a href="#" class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >About Us</a
+          >
+          <a
+            href="./features.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Features</a
+          >
+          <a
+            href="./pricing.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Pricing</a
+          >
+          <a
+            href="./FAQ.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >FAQ</a
+          >
+          <a
+            href="./blog.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Blog</a
+          >
+          <a
+            href="./contactUs.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Contact Us</a
+          >
+          <button
+            id="closeButton"
+            class="absolute top-4 right-4 text-2xl leading-normal"
+          >
+            ✖
+          </button>
+        </div>
+        <!-- end menu -->
+        <!--end header -->
+      </div>
+      <!-- end header -->
+      <!-- aboutUs -->
+      <div
+        class="w-full bg-[#fff] flex mobile:flex-col justify-center mobile:gap-y-[20px] dark:bg-[#1C1E53] dark:text-[#fff] tab:flex-row my-[20px]"
+      >
+        <div class="w-[60%] max-w-[400px] mx-auto text-[#282938] dark:text-[#fff] h-full">
+          <h5 class="text-[20px] font-medium">About Us</h5>
+          <h4 class="font-bold leading-[55px] text-[43px]">
+            Our designs solve problems
+          </h4>
+          <p class="opacity-50 mt-[10px] text-[15px] leading-[22px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="w-[40%] mx-auto min-w-[278px] mx-auto">
+          <img
+            src="./public/images/group-of-people-sitting-indoors-3184360.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- WhoWeAre -->
+      <div class="w-full max-w-[1200px] flex flex-col bg-[#F4F5F5] dark:bg-[#101237] dark:text-[#fff] mx-auto">
+        <div
+          class="flex mobile:flex-col tab:flex-row w-full py-[40px] mb-[40px]"
+        >
+          <div class="w-[50%] max-w-[400px] mx-auto text-[#282938]  dark:text-[#fff] h-full">
+            <h5 class="text-[17px] font-normal">Who we are</h5>
+            <h4 class="font-medium leading-[55px] text-[40px] min-w-[270px]">
+              Goal focussed
+            </h4>
+            <p class="opacity-50 mt-[10px] text-[15px] leading-[22px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div
+            class="w-[50%] max-w-[400px] mx-auto text-[#282938]  dark:text-[#fff] h-full pt-[35px]"
+          >
+            <h4
+              class="font-medium leading-[45px] text-[40px] tab:min-w-[500px]"
+            >
+              Continuous improvement
+            </h4>
+            <p class="opacity-50 mt-[10px] text-[15px]  dark:text-[#fff] leading-[22px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <img
+            src="./public/images/man-in-blue-jacket-looking-at-white-board-7413916.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- process -->
+      <div class="f-full flex flex-col justify-center my-[30px]">
+        <h2 class="text-[30px] font-bold text-[#282938] dark:text-[#fff] w-full text-center">
+          The process we follow
+        </h2>
+
+        <div
+          class="flex flex-row text-[#282938] mt-[30px] dark:text-[#fff] flex-wrap gap-[20px] mx-auto"
+        >
+          <div class="mx-auto flex flex-row gap-x-[20px]">
+            <div class="flex flex-col mx-auto w-[200px]">
+              <div class="h-[26px] gap-x-[10px] flex flex-row">
+                <div class="w-[25px] h-[25px] bg-[#2405F2] rounded-full"></div>
+                <div
+                  class="h-[13px] w-[150px] border-b-2 border-dashed dark:border-[#fff] border-[#282938]"
+                ></div>
+              </div>
+              <h5 class="w-full text-[20px] font-medium pl-[10px]">Planning</h5>
+              <p class="w-full text-[13px] opacity-50 pl-[10px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </p>
+            </div>
+            <div class="flex flex-col mx-auto w-[200px]">
+              <div class="h-[26px] gap-x-[10px] flex flex-row">
+                <div class="w-[25px] h-[25px] bg-[#2405F2] rounded-full"></div>
+                <div
+                  class="h-[13px] w-[150px] border-b-2 border-dashed  dark:border-[#fff] border-[#282938]"
+                ></div>
+              </div>
+              <h5 class="w-full text-[20px] font-medium pl-[10px]">
+                Conception
+              </h5>
+              <p class="w-full text-[13px] opacity-50 pl-[10px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto flex flex-row gap-x-[20px]">
+            <div class="flex flex-col mx-auto w-[200px]">
+              <div class="h-[26px] gap-x-[10px] flex flex-row">
+                <div class="w-[25px] h-[25px] bg-[#2405F2] rounded-full"></div>
+                <div
+                  class="h-[13px] w-[150px] border-b-2 border-dashed dark:border-[#fff] border-[#282938]"
+                ></div>
+              </div>
+              <h5 class="w-full text-[20px] font-medium pl-[10px]">Design</h5>
+              <p class="w-full text-[13px] opacity-50 pl-[10px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </p>
+            </div>
+            <div class="flex flex-col mx-auto w-[200px]">
+              <div class="h-[26px] gap-x-[10px] flex flex-row">
+                <div class="w-[25px] h-[25px] bg-[#2405F2] rounded-full"></div>
+                <div
+                  class="h-[13px] w-[150px] border-b-2 border-dashed dark:border-[#fff] border-[#282938]"
+                ></div>
+              </div>
+              <h5 class="w-full text-[20px] font-medium pl-[10px]">
+                Development
+              </h5>
+              <p class="w-full text-[13px] opacity-50 pl-[10px]">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ourmission ourvision -->
+      <div class="w-full max-w-[1200px] flex flex-col bg-[#EEF4FA] dark:bg-[#101237] mx-auto">
+        <div
+          class="w-full flex mobile:flex-col mobile:gap-y-[20px] tab:flex-row my-[20px]"
+        >
+          <div class="w-[60%] max-w-[400px] m-auto text-[#282938] dark:text-[#fff] h-full">
+            <h5 class="text-[15px] font-normal">Our Mission</h5>
+            <h4 class="font-semibold leading-[40px] text-[33px]">
+              Inspire, Innovate, Share
+            </h4>
+            <p class="opacity-50 mt-[10px] text-[15px] leading-[22px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <div class="w-[40%] mx-auto min-w-[278px] max-w-[400px]">
+            <img
+              src="./public/images/a-man-standing-in-an-office-7792811.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="w-full flex mobile:flex-col mobile:gap-y-[20px] tab:flex-row my-[20px]"
+        >
+          <div class="w-[40%] mx-auto min-w-[278px] max-w-[400px]">
+            <img
+              src="./public/images/photo-of-women-at-the-meeting-3810789.jpg"
+              alt=""
+            />
+          </div>
+          <div class="w-[60%] max-w-[400px] m-auto text-[#282938] dark:text-[#fff] h-full">
+            <h5 class="text-[15px] font-normal">Our Vision</h5>
+            <h4 class="font-semibold leading-[40px] text-[33px]">
+              Laser focus
+            </h4>
+            <p class="opacity-50 mt-[10px] text-[15px] leading-[22px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- benefits -->
+      <div class="f-full flex flex-col justify-center dark:text-[#fff] my-[50px]">
+        <h2 class="text-center w-full font-bold text-[34px] dark:text-[#fff] text-[#282938]">
+          The benefits of working with us
+        </h2>
+        <div
+          class="flex w-full tab:flex-row mobile:flex-col mx-auto gap-[40px] max-w-[1200px] justify-center mt-[20px]"
+        >
+          <div
+            class="bg-[#ffff] dark:bg-[#101237] mx-auto flex flex-col transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 gap-y-[10px] items-start w-[350px] px-[20px] h-[300px] text-left bg-[#EEF4FA] py-[50px]"
+          >
+            <img
+              class="w-[32px]"
+              src="./public/images/svg/features/Icon (5).svg"
+              alt=""
+            />
+            <h4 class="text-[22px] font-medium">Customize Ease</h4>
+            <p class="text-[15px]">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div
+            class="bg-[#ffff] dark:bg-[#101237] mx-auto flex flex-col transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 gap-y-[10px] items-start w-[350px] px-[20px] h-[300px] text-left bg-[#EEF4FA] py-[50px]"
+          >
+            <img
+              class="w-[32px]"
+              src="./public/images/svg/features/Icon (2).svg"
+              alt=""
+            />
+            <h4 class="text-[22px] font-medium">Perfectly Responsive</h4>
+            <p class="text-[15px]">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div
+            class="bg-[#ffff] dark:bg-[#101237] mx-auto flex flex-col transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 gap-y-[10px] items-start w-[350px] px-[20px] h-[300px] text-left bg-[#EEF4FA] py-[50px]"
+          >
+            <img
+              class="w-[32px]"
+              src="./public/images/svg/features/Icon.svg"
+              alt=""
+            />
+            <h4 class="text-[22px] font-medium">friendly Support</h4>
+            <p class="text-[15px]">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex w-full tab:flex-row mobile:flex-col mx-auto max-w-[1200px] dark:bg-[#FCD980] justify-center mt-[20px]"
+        >
+          <div class="w-[200px] flex flex-col mobile:mx-auto tab:mx-0">
+            <h5 class="font-bold opacity-80 dark:text-[#2b2b2b] text-[30px]">100.000+</h5>
+            <p class="text-[12px] pl-[5px] font-semibold dark:text-[#2b2b2b] opacity-80">
+              Finsweet Users
+            </p>
+          </div>
+          <div class="flex flex-row gap-[25px]">
+            <div class="w-[110px] pt-[20px]">
+              <img
+                class="m-auto w-[110px]"
+                src="./public/images/logos/Logo 1.png"
+                alt=""
+              />
+            </div>
+            <div class="w-[110px] pt-[20px]">
+              <img
+                class="m-auto w-[110px]"
+                src="./public/images/logos/Logo 2.png"
+                alt=""
+              />
+            </div>
+            <div class="w-[110px] pt-[20px]">
+              <img
+                class="m-auto w-[110px]"
+                src="./public/images/logos/Logo 3.png"
+                alt=""
+              />
+            </div>
+            <div class="w-[110px] pt-[20px]">
+              <img
+                class="m-auto w-[110px]"
+                src="./public/images/logos/Logo 4.png"
+                alt=""
+              />
+            </div>
+            <div class="w-[110px] pt-[20px]">
+              <img
+                class="m-auto w-[110px]"
+                src="./public/images/logos/Logo 5.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- OurTeam -->
+      <div
+        class="w-full flex flex-col justify-center bg-[#EEF4FA] dark:bg-[#1C1E53] mx-auto text-[#282938] dark:text-[#fff]  pt-[70px] gap-y-[20px]"
+      >
+        <h4 class="font-bold text-[30px] w-full text-center">Meet our team</h4>
+        <div
+          class="flex flex-row flex-wrap mb-[40px] mx-auto my-[20px] gap-[30px]"
+        >
+          <div class="flex flex-row gap-x-[30px] mx-auto">
+            <div
+              class="w-[220px] dark:bg-[#101237] flex flex-col justify-center text-center bg-[#fff] gap-y-[5px] rounded-[8px]"
+            >
+              <div
+                class="rounded-full group my-[15px] mx-auto relative overflow-hidden"
+              >
+                <img
+                  class="w-[120px]"
+                  src="./public/images/our-team/1.jpg"
+                  alt=""
+                />
+                <div
+                  class="w-[120px] h-[110px] absolute top-10 transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 duration-300 opacity-0 group-hover:opacity-100 rounded-full z-10 flex itemes-center"
+                >
+                  <div
+                    class="flex itemes-center opacity-100 flex-row justify-center w-full mx-auto gap-x-[10px] m-auto"
+                  >
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/4.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/3.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-[120px] absolute top-0 transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 opacity-0 group-hover:opacity-50 bg-gradient-to-b from-neutral-400 to-blue-900 rounded-full h-[120px] flex items-end"
+                ></div>
+              </div>
+              <h5 class="text-[22px] opacity-90 font-semibold">John Smith</h5>
+              <p class="mb-[40px] text-[12px] opacity-80 font-medium">CEO</p>
+            </div>
+            <div
+              class="w-[220px] dark:bg-[#101237] flex flex-col justify-center text-center bg-[#fff] gap-y-[5px] rounded-[8px]"
+            >
+              <div
+                class="rounded-full group my-[15px] mx-auto relative overflow-hidden"
+              >
+                <img
+                  class="w-[120px]"
+                  src="./public/images/our-team/2.jpg"
+                  alt=""
+                />
+                <div
+                  class="w-[120px] h-[110px] absolute top-10 transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 duration-300 opacity-0 group-hover:opacity-100 rounded-full z-10 flex itemes-center"
+                >
+                  <div
+                    class="flex itemes-center opacity-100 flex-row justify-center w-full mx-auto gap-x-[10px] m-auto"
+                  >
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/4.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/3.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-[120px] absolute top-0 transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 opacity-0 group-hover:opacity-50 bg-gradient-to-b from-neutral-400 to-blue-900 rounded-full h-[120px] flex items-end"
+                ></div>
+              </div>
+              <h5 class="text-[22px] opacity-90 font-semibold">Simon Adams</h5>
+              <p class="mb-[40px] text-[12px] opacity-80 font-medium">CTO</p>
+            </div>
+          </div>
+          <div class="flex flex-row gap-x-[30px] mx-auto">
+            <div
+              class="w-[220px] dark:bg-[#101237] flex flex-col justify-center text-center bg-[#fff] gap-y-[5px] rounded-[8px]"
+            >
+              <div
+                class="rounded-full group my-[15px] mx-auto relative overflow-hidden"
+              >
+                <img
+                  class="w-[120px]"
+                  src="./public/images/our-team/3.jpg"
+                  alt=""
+                />
+                <div
+                  class="w-[120px] h-[110px] absolute top-10 transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 duration-300 opacity-0 group-hover:opacity-100 rounded-full z-10 flex itemes-center"
+                >
+                  <div
+                    class="flex itemes-center opacity-100 flex-row justify-center w-full mx-auto gap-x-[10px] m-auto"
+                  >
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/4.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/3.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-[120px] absolute top-0 transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 opacity-0 group-hover:opacity-50 bg-gradient-to-b from-neutral-400 to-blue-900 rounded-full h-[120px] flex items-end"
+                ></div>
+              </div>
+              <h5 class="text-[22px] opacity-90 font-semibold">Paul Jones</h5>
+              <p class="mb-[40px] text-[12px] opacity-80 font-medium">
+                Design lead
+              </p>
+            </div>
+            <div
+              class="w-[220px] dark:bg-[#101237] flex flex-col justify-center text-center bg-[#fff] gap-y-[5px] rounded-[8px]"
+            >
+              <div
+                class="rounded-full group my-[15px] mx-auto relative overflow-hidden"
+              >
+                <img
+                  class="w-[120px]"
+                  src="./public/images/our-team/4.jpg"
+                  alt=""
+                />
+                <div
+                  class="w-[120px] h-[110px] absolute top-10 transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 duration-300 opacity-0 group-hover:opacity-100 rounded-full z-10 flex itemes-center"
+                >
+                  <div
+                    class="flex itemes-center opacity-100 flex-row justify-center w-full mx-auto gap-x-[10px] m-auto"
+                  >
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/4.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/3.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-[15px] h-[15px] mb-[5px]"
+                      src="./public/images/icon/1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-[120px] absolute top-0 transition ease-in-out delay-150 group-hover:-translate-y-1 group-hover:scale-110 opacity-0 group-hover:opacity-50 bg-gradient-to-b from-neutral-400 to-blue-900 rounded-full h-[120px] flex items-end"
+                ></div>
+              </div>
+              <h5 class="text-[22px] opacity-90 font-semibold">Sara Hardin</h5>
+              <p class="mb-[40px] text-[12px] opacity-80 font-medium">
+                Project Manager
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="w-full flex flex-wrap mt-[30px] bg-[#1C1E53] dark:bg-[#101237] justify-center">
+        <div class="tab:w-[40%] h-[200px] mx-auto">
+          <div class="w-full mt-[40px] tab:pl-[60px]">
+            <img src="./public/images/Logo.png" alt="" />
+          </div>
+          <div class="w-full mt-[20px] text-[#fff] tab:pl-[60px] text-[15px]">
+            <p class="w-[380px]">
+              We are always open to discuss your project and improve your online
+              presence.
+            </p>
+          </div>
+          <div
+            class="w-[80%] mobile:min-w-[450px] tab:min-w-[480px] bg-[#FCD980] mx-auto flex flex-row h-[80px] tab:p-[10px] mt-[20px] mobile:ml-[0px] tab:mx-auto mb-[20px] rounded-[9px]"
+          >
+            <div class="w-[45%] flex flex-col text-[#282938] mx-auto">
+              <h4 class="font-medium text-[16px]">Email me at</h4>
+              <p class="block">contact@website.com</p>
+            </div>
+            <div class="w-[45%] flex flex-col text-[#282938] mx-auto">
+              <h4 class="font-medium text-[16px]">Call us</h4>
+              <p class=" ">0927 6277 28525</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mobile: tab:w-[40%] h-[200px] mx-auto text-[#fff] mb-[20px]"
+        >
+          <h2 class="w-full pl-[10px] text-[28px] mt-[40px] font-medium">
+            Lets Talk!
+          </h2>
+          <p class="w-[400px] opacity-50 pl-[10px] text-[13px]">
+            We are always open to discuss your project, improve your online
+            presence and help with your UX/UI design challenges.
+          </p>
+          <div
+            class="flex flex-row flex-nowrap gap-x-[20px] pl-[10px] mt-[10px]"
+          >
+            <img src="./public/images/icon/1.png" alt="" />
+            <img src="./public/images/icon/2.png" alt="" />
+            <img src="./public/images/icon/3.png" alt="" />
+            <img src="./public/images/icon/4.png" alt="" />
+          </div>
+        </div>
+        <div class="w-full bg-[#fff] flex text-[#282938] dark:bg-[#1C1E53] dark:text-[#fff] pb-[8px]">
+          <div class="w-[50%]"><p>Copyright 2022, Finsweet.com</p></div>
+          <nav
+            class="tab:flex mobile:hidden flex-row gap-x-5 w-[50%] box-border justify-end pr-[20px] leading-[28px] font-medium text-center"
+          >
+            <a
+              href="./home.html"
+              class="block h-7 w-fit items-center hover:border-b-2 hover:border-[#BBBBCB] text-sm"
+              >Home</a
+            >
+            <a
+              href="./aboutus.html"
+              class="block h-7 min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
+              >About us</a
+            >
+            <a
+              href="./features.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Features</a
+            >
+            <a
+              href="./pricing.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Pricing</a
+            >
+            <a
+              href="./FAQ.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >FAQ</a
+            >
+            <a
+              href="./blog.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Blog</a
+            >
+          </nav>
+        </div>
+      </div>
+      <!--end footer -->
+      <!-- darkmod -->
+      <button class="btn w-[200px] text-[#fff] w-[80px] bg-[#454545] fixed top-80 ">Dark </button>
+
+    </div>
+    <!--end project  -->
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const menu = document.getElementById("menu");
+      const closeButton = document.getElementById("closeButton");
+
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      closeButton.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    </script>
+    <script>
+      let btn=document.querySelector(".btn")
+      btn.addEventListener("click",function(){
+        document.body.classList.toggle("dark")
+      })
+    </script>
+  </body>
+</html>

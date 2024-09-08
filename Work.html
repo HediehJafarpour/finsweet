@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>finsweet-Home</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <style>
+      @font-face {
+        font-family: "poppins";
+        src: url(./public/font/Poppins-Regular.ttf) format("ttf");
+        src: url(./public/font/Poppins-Regular.woff) format("woff");
+      }
+      * {
+        font-family: "poppins";
+      }
+      .menu {
+        display: none;
+      }
+      .menu.active {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--project -->
+    <!-- wrapper -->
+    <div class="overflow-hidden dark:bg-[#1C1E53] relative">
+      <!--header -->
+      <div
+        class="w-full bg-[#1C1E53] dark:bg-[#101237] flex flex-col h-fit pb-[0px] box-border"
+      >
+        <!-- header -->
+        <div class="w-full flex flex-col h-fit pb-[40px] box-border">
+          <!-- header -->
+          <div
+            class="grid grid-cols-1 bg-[#1C1E53] dark:bg-[#101237] w-full h-[35px] grid-rows-1 px-[30px] pt-4 pr-[10px]"
+          >
+            <div class="w-[200px] h-full justify-self-start mt-2 row-start-1">
+              <img class="w-[122px]" src="./public/images/Logo.png" alt="" />
+            </div>
+
+            <button
+              id="menuButton"
+              class="w-9 h-9 bg-blue-500 tab:hidden text-white rounded-md focus:outline-none justify-self-end row-start-1"
+            >
+              ☰
+            </button>
+
+            <div
+              class="tab:flex mobile:hidden flex-row gap-x-8 w-[70%] h-full row-start-1 justify-self-end justify-end box-borded"
+            >
+              <nav
+                class="tab:flex mobile:hiddem flex-row-nowrap gap-x-5 box-border justify-items-end pt-[10px] leading-[28px]"
+              >
+                <a
+                  href="./home.html"
+                  class="block h-7 w-fit items-center text-[#ffff] hover:border-b-2 hover:border-[#BBBBCB] text-sm font-bold"
+                  >Home</a
+                >
+                <a
+                  href="./aboutus.html"
+                  class="block h-7 text-[#BBBBCB] min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
+                  >About us</a
+                >
+                <a
+                  href="./features.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >Features</a
+                >
+                <a
+                  href="./pricing.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >Pricing</a
+                >
+                <a
+                  href="./FAQ.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >FAQ</a
+                >
+                <a
+                  href="./blog.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >Blog</a
+                >
+              </nav>
+              <a
+                href="./contactUs.html"
+                class="block text-[#ffff] font-medium border-[#F4F6FC] text-sm min-w-[120px] text-center h-[40px] rounded-[41px] border-2 border-[#5c5d83] pt-[4px] leading-[28px]"
+                >Contsct us</a
+              >
+            </div>
+          </div>
+          <!-- menu -->
+          <div
+            id="menu"
+            class="menu inset-0 bg-gray-800 bg-opacity-90 flex-col items-center justify-center text-white text-3xl mobile:fixed tab:hidden pt-[100px] z-20"
+          >
+            <a
+              href="./home.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Home</a
+            >
+            <a
+              href="./aboutus.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >About Us</a
+            >
+            <a
+              href="./features.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Features</a
+            >
+            <a
+              href="./pricing.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Pricing</a
+            >
+            <a
+              href="./FAQ.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >FAQ</a
+            >
+            <a
+              href="./blog.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Blog</a
+            >
+            <a
+              href="./contactUs.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Contact Us</a
+            >
+            <button
+              id="closeButton"
+              class="absolute top-4 right-4 text-2xl leading-normal"
+            >
+              ✖
+            </button>
+          </div>
+          <!-- end menu -->
+          <!--end header -->
+        </div>
+        <!-- menu -->
+        <div
+          id="menu"
+          class="menu inset-0 z-20 bg-gray-800 bg-opacity-90 flex-col items-center justify-center text-white text-3xl mobile:fixed tab:hidden pt-[100px]"
+        >
+          <a href="#" class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Home</a
+          >
+          <a
+            href="./aboutus.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >About Us</a
+          >
+          <a
+            href="./features.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Features</a
+          >
+          <a
+            href="./pricing.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Pricing</a
+          >
+          <a
+            href="./FAQ.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >FAQ</a
+          >
+          <a
+            href="./blog.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Blog</a
+          >
+          <a
+            href="./contactUs.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Contact Us</a
+          >
+          <button
+            id="closeButton"
+            class="absolute top-4 right-4 text-2xl leading-normal"
+          >
+            ✖
+          </button>
+        </div>
+        <!-- end menu -->
+        <!--end header -->
+      </div>
+      <!-- end header -->
+      <div
+        class="flex flex-col text-center bg-[#F4F5F5] dark:bg-[#1C1E53] text-[#282938] dark:text-[#fff] p-[80px] mt-[30px]"
+      >
+        <p class="w-fit mx-auto max-w-[550px] text-[12px] my-[20px] opacity-70">
+          What we created
+        </p>
+        <h2
+          class="w-fit mx-auto text-[48px] mobile:leading-[40px] tab:leading-[30px] font-semibold"
+        >
+          Our Work Portfolio
+        </h2>
+        <p class="w-fit mx-auto max-w-[550px] text-[12px] my-[20px] opacity-70">
+          We help teams create great digital products by providing them with
+          tools and technology to make the design-to-code process universally
+          accessible.
+        </p>
+        <div
+          class="flex flex-row flex-nowrap gap-x-[20px] pl-[10px] mx-auto dark:hidden mt-[10px]"
+        >
+          <img src="./public/images/icon/11.png" alt="" />
+          <img src="./public/images/icon/12.png" alt="" />
+          <img src="./public/images/icon/13.png" alt="" />
+          <img src="./public/images/icon/14.png" alt="" />
+        </div>
+        <div
+          class="hidden flex-row flex-nowrap gap-x-[20px] pl-[10px] mx-auto dark:flex mt-[10px]"
+        >
+          <img src="./public/images/icon/3.png" alt="" />
+          <img src="./public/images/icon/2.png" alt="" />
+          <img src="./public/images/icon/1.png" alt="" />
+          <img src="./public/images/icon/4.png" alt="" />
+        </div>
+      </div>
+      <div class="flex flex-col w-full">
+        <div
+          class="my-[40px] text-[#1C1E53] dark:text-[#fff] flex flex-row gap-x-[20px] mx-auto"
+        >
+          <h5 class="text-[#2405F2]">All</h5>
+          <h5 class="">UI Design</h5>
+          <h5 class="">Webflow Design</h5>
+          <h5 class="">Figma Design</h5>
+        </div>
+        <div class="w-full flex flex-col">
+          <div
+            class="w-full mx-auto flex tab:flex-row mobile:flex-col justify-center gap-x-[40px] gap-y-[20px]"
+          >
+            <div
+              class="flex mobile:w-[450px] tab:w-[550px] mobile:mx-auto p-[20px] desk:mx-[0] text-[#282938] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-10 duration-300 dark:text-[#fff] flex-col gap-y-[20px] justify-center"
+            >
+              <img
+                class="w-[505px]"
+                src="./public/images/work/Image (1).jpg"
+                alt=""
+              />
+              <h4 class="text-[22px] leading-[28px] font-semibold">
+                Template 1
+              </h4>
+              <p class="text-[15px] leading-[20px] font-normal opacity-80">
+                Apparently we had reached a great height in the atmosphere, for
+                the sky was a dead black, and the stars had ceased to twinkle.
+              </p>
+              <a
+                href=""
+                class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] font-semibold leading-[25px] font-normal"
+                ><img
+                  src="./public/images/svg/arrow2.svg"
+                  class="tab:w-[18px] mobile:w-[10px]"
+                />View Portfolio</a
+              >
+            </div>
+            <div
+              class="flex mobile:w-[450px] tab:w-[550px] mobile:mx-auto p-[20px] desk:mx-[0] text-[#282938] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-10 duration-300 dark:text-[#fff] flex-col gap-y-[20px] justify-center"
+            >
+              <img
+                class="w-[505px]"
+                src="./public/images/work/Image (2).jpg"
+                alt=""
+              />
+              <h4 class="text-[22px] leading-[28px] font-semibold">
+                Template 2
+              </h4>
+              <p class="text-[15px] leading-[20px] font-normal opacity-80">
+                Apparently we had reached a great height in the atmosphere, for
+                the sky was a dead black, and the stars had ceased to twinkle.
+              </p>
+              <a
+                href=""
+                class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] font-semibold leading-[25px] font-normal"
+                ><img
+                  src="./public/images/svg/arrow2.svg"
+                  class="tab:w-[18px] mobile:w-[10px]"
+                />View Portfolio</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-full mx-auto flex tab:flex-row mobile:flex-col justify-center gap-x-[40px] gap-y-[20px]"
+          >
+            <div
+              class="flex mobile:w-[450px] tab:w-[550px] mobile:mx-auto p-[20px] desk:mx-[0] text-[#282938] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-10 duration-300 dark:text-[#fff] flex-col gap-y-[20px] justify-center"
+            >
+              <img
+                class="w-[505px]"
+                src="./public/images/work/Image (3).jpg"
+                alt=""
+              />
+              <h4 class="text-[22px] leading-[28px] font-semibold">
+                Template 3
+              </h4>
+              <p class="text-[15px] leading-[20px] font-normal opacity-80">
+                Apparently we had reached a great height in the atmosphere, for
+                the sky was a dead black, and the stars had ceased to twinkle.
+              </p>
+              <a
+                href=""
+                class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] font-semibold leading-[25px] font-normal"
+                ><img
+                  src="./public/images/svg/arrow2.svg"
+                  class="tab:w-[18px] mobile:w-[10px]"
+                />View Portfolio</a
+              >
+            </div>
+            <div
+              class="flex mobile:w-[450px] tab:w-[550px] mobile:mx-auto p-[20px] desk:mx-[0] text-[#282938] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-10 duration-300 dark:text-[#fff] flex-col gap-y-[20px] justify-center"
+            >
+              <img
+                class="w-[505px]"
+                src="./public/images/work/Image (4).jpg"
+                alt=""
+              />
+              <h4 class="text-[22px] leading-[28px] font-semibold">
+                Template 4
+              </h4>
+              <p class="text-[15px] leading-[20px] font-normal opacity-80">
+                Apparently we had reached a great height in the atmosphere, for
+                the sky was a dead black, and the stars had ceased to twinkle.
+              </p>
+              <a
+                href=""
+                class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] font-semibold leading-[25px] font-normal"
+                ><img
+                  src="./public/images/svg/arrow2.svg"
+                  class="tab:w-[18px] mobile:w-[10px]"
+                />View Portfolio</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-full mx-auto flex tab:flex-row mobile:flex-col justify-center gap-x-[40px] gap-y-[20px]"
+          >
+            <div
+              class="flex mobile:w-[450px] tab:w-[550px] mobile:mx-auto p-[20px] desk:mx-[0] text-[#282938] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-10 duration-300 dark:text-[#fff] flex-col gap-y-[20px] justify-center"
+            >
+              <img
+                class="w-[505px]"
+                src="./public/images/work/Image (5).jpg"
+                alt=""
+              />
+              <h4 class="text-[22px] leading-[28px] font-semibold">
+                Template 5
+              </h4>
+              <p class="text-[15px] leading-[20px] font-normal opacity-80">
+                Apparently we had reached a great height in the atmosphere, for
+                the sky was a dead black, and the stars had ceased to twinkle.
+              </p>
+              <a
+                href=""
+                class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] font-semibold leading-[25px] font-normal"
+                ><img
+                  src="./public/images/svg/arrow2.svg"
+                  class="tab:w-[18px] mobile:w-[10px]"
+                />View Portfolio</a
+              >
+            </div>
+            <div
+              class="flex mobile:w-[450px] tab:w-[550px] mobile:mx-auto p-[20px] desk:mx-[0] text-[#282938] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-10 duration-300 dark:text-[#fff] flex-col gap-y-[20px] justify-center"
+            >
+              <img
+                class="w-[505px]"
+                src="./public/images/work/Image (6).jpg"
+                alt=""
+              />
+              <h4 class="text-[22px] leading-[28px] font-semibold">
+                Template 6
+              </h4>
+              <p class="text-[15px] leading-[20px] font-normal opacity-80">
+                Apparently we had reached a great height in the atmosphere, for
+                the sky was a dead black, and the stars had ceased to twinkle.
+              </p>
+              <a
+                href=""
+                class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] font-semibold leading-[25px] font-normal"
+                ><img
+                  src="./public/images/svg/arrow2.svg"
+                  class="tab:w-[18px] mobile:w-[10px]"
+                />View Portfolio</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col text-center  text-[#282938] dark:text-[#fff] p-[80px] mt-[30px]"
+      >
+        <h2
+          class="w-fit mx-auto text-[48px] mobile:leading-[40px] tab:leading-[30px] font-semibold"
+        >
+          Lest build somthing great together
+        </h2>
+        <p class="w-fit mx-auto max-w-[550px] text-[12px] my-[20px] opacity-70">
+          Nullam vitae purus at tortor mattis dapibus. Morbi purus est,
+          ultricies nec dolor sit amet, scelerisque cursus purus.
+        </p>
+        <a href="./contactUs.html" class="mx-auto w-[200px] my-[20px] rounded-[40px] p-[20px] text-[#1C1E53] font-semibold bg-[#FCD980] ">Contact us</a>
+      </div>
+
+      <!-- footer -->
+      <div
+        class="w-full flex flex-wrap mt-[30px] bg-[#1C1E53] dark:bg-[#101237] justify-center"
+      >
+        <div class="tab:w-[40%] h-[200px] mx-auto">
+          <div class="w-full mt-[40px] tab:pl-[60px]">
+            <img src="./public/images/Logo.png" alt="" />
+          </div>
+          <div class="w-full mt-[20px] text-[#fff] tab:pl-[60px] text-[15px]">
+            <p class="w-[380px]">
+              We are always open to discuss your project and improve your online
+              presence.
+            </p>
+          </div>
+          <div
+            class="w-[80%] mobile:min-w-[450px] tab:min-w-[480px] bg-[#FCD980] mx-auto flex flex-row h-[80px] tab:p-[10px] mt-[20px] mobile:ml-[0px] tab:mx-auto mb-[20px] rounded-[9px]"
+          >
+            <div class="w-[45%] flex flex-col text-[#282938] mx-auto">
+              <h4 class="font-medium text-[16px]">Email me at</h4>
+              <p class="block">contact@website.com</p>
+            </div>
+            <div class="w-[45%] flex flex-col text-[#282938] mx-auto">
+              <h4 class="font-medium text-[16px]">Call us</h4>
+              <p class=" ">0927 6277 28525</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mobile: tab:w-[40%] h-[200px] mx-auto text-[#fff] mb-[20px]"
+        >
+          <h2 class="w-full pl-[10px] text-[28px] mt-[40px] font-medium">
+            Lets Talk!
+          </h2>
+          <p class="w-[400px] opacity-50 pl-[10px] text-[13px]">
+            We are always open to discuss your project, improve your online
+            presence and help with your UX/UI design challenges.
+          </p>
+          <div
+            class="flex flex-row flex-nowrap gap-x-[20px] pl-[10px] mt-[10px]"
+          >
+            <img src="./public/images/icon/1.png" alt="" />
+            <img src="./public/images/icon/2.png" alt="" />
+            <img src="./public/images/icon/3.png" alt="" />
+            <img src="./public/images/icon/4.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="w-full bg-[#fff] dark:bg-[#1C1E53] flex text-[#282938] dark:text-[#fff] pb-[20px]"
+        >
+          <div class="w-[50%]"><p>Copyright 2022, Finsweet.com</p></div>
+          <nav
+            class="tab:flex mobile:hidden flex-row gap-x-5 w-[50%] box-border justify-end pr-[20px] leading-[28px] font-medium text-center"
+          >
+            <a
+              href="#"
+              class="block h-7 w-fit items-center hover:border-b-2 hover:border-[#BBBBCB] text-sm"
+              >Home</a
+            >
+            <a
+              href="./aboutus.html"
+              class="block h-7 min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
+              >About us</a
+            >
+            <a
+              href="./features.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Features</a
+            >
+            <a
+              href="./pricing.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Pricing</a
+            >
+            <a
+              href="./FAQ.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >FAQ</a
+            >
+            <a
+              href="./blog.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Blog</a
+            >
+          </nav>
+        </div>
+      </div>
+      <!--end footer -->
+    </div>
+    <!-- darkmod -->
+    <button
+      class="btn w-[200px] text-[#fff] w-[80px] bg-[#454545] fixed top-80"
+    >
+      Dark
+    </button>
+
+    <!--end wrapper -->
+    <!--end project -->
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const menu = document.getElementById("menu");
+      const closeButton = document.getElementById("closeButton");
+
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      closeButton.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    </script>
+    <script>
+      let btn = document.querySelector(".btn");
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>

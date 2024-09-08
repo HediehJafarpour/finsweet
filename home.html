@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>finsweet-Home</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <style>
+      @font-face {
+        font-family: 'poppins';
+        src: url(./public/font/Poppins-Regular.ttf)format('ttf');
+        src: url(./public/font/Poppins-Regular.woff)format('woff');
+      }
+      *{
+        font-family: 'poppins';
+      }
+      .menu {
+        display: none;
+      }
+      .menu.active {
+        display: flex;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!--project -->
+    <!-- wrapper -->
+    <div class="overflow-hidden dark:bg-[#1C1E53] relative ">
+      
+      <!-- first-page -->
+      <div class="w-full bg-[#1C1E53] dark:bg-[#101237]  flex flex-col h-fit pb-[40px] box-border">
+        <!-- header -->
+        <div class="w-full flex flex-col h-fit pb-[40px] box-border">
+          <!-- header -->
+          <div
+            class="grid grid-cols-1 bg-[#1C1E53] dark:bg-[#101237] w-full h-[82px] grid-rows-1 px-[30px] pt-4 pr-[10px]"
+          >
+            <div class="w-[200px] h-full justify-self-start mt-2 row-start-1">
+              <img class="w-[122px]" src="./public/images/Logo.png" alt="" />
+            </div>
+  
+            <button
+              id="menuButton"
+              class="w-9 h-9 bg-blue-500 tab:hidden text-white rounded-md focus:outline-none justify-self-end row-start-1"
+            >
+              ☰
+            </button>
+  
+            <div
+              class="tab:flex mobile:hidden flex-row gap-x-8 w-[70%] h-full row-start-1 justify-self-end justify-end box-borded"
+            >
+              <nav
+                class="tab:flex mobile:hiddem flex-row-nowrap gap-x-5 box-border justify-items-end pt-[10px] leading-[28px]"
+              >
+                <a
+                  href="./home.html"
+                  class="block h-7 w-fit items-center text-[#ffff] hover:border-b-2 hover:border-[#BBBBCB] text-sm font-bold"
+                  >Home</a
+                >
+                <a
+                  href="./aboutus.html"
+                  class="block h-7 text-[#BBBBCB] min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
+                  >About us</a
+                >
+                <a
+                  href="./features.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >Features</a
+                >
+                <a
+                  href="./pricing.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >Pricing</a
+                >
+                <a
+                  href="./FAQ.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >FAQ</a
+                >
+                <a
+                  href="./blog.html"
+                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  >Blog</a
+                >
+              </nav>
+              <a
+                href="./contactUs.html"
+                class="block text-[#ffff] font-medium border-[#F4F6FC] text-sm min-w-[120px] text-center h-[40px] rounded-[41px] border-2 border-[#5c5d83] pt-[4px] leading-[28px]"
+                >Contsct us</a
+              >
+            </div>
+          </div>
+          <!-- menu -->
+          <div
+            id="menu"
+            class="menu inset-0 bg-gray-800 bg-opacity-90 flex-col items-center justify-center text-white text-3xl mobile:fixed tab:hidden pt-[100px] z-20"
+          >
+            <a
+              href="./home.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Home</a
+            >
+            <a href="./aboutus.html" class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >About Us</a
+            >
+            <a
+              href="./features.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Features</a
+            >
+            <a
+              href="./pricing.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Pricing</a
+            >
+            <a
+              href="./FAQ.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >FAQ</a
+            >
+            <a
+              href="./blog.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Blog</a
+            >
+            <a
+              href="./contactUs.html"
+              class="py-4 block w-full text-center hover:bg-zinc-500/50"
+              >Contact Us</a
+            >
+            <button
+              id="closeButton"
+              class="absolute top-4 right-4 text-2xl leading-normal"
+            >
+              ✖
+            </button>
+          </div>
+          <!-- end menu -->
+          <!--end header -->
+        </div>
+        <!-- menu -->
+        <div
+          id="menu"
+          class="menu inset-0 z-20 bg-gray-800 bg-opacity-90 flex-col items-center justify-center text-white text-3xl mobile:fixed tab:hidden pt-[100px]"
+        >
+          <a href="#" class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Home</a
+          >
+          <a
+            href="./aboutus.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >About Us</a
+          >
+          <a
+            href="./features.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Features</a
+          >
+          <a
+            href="./pricing.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Pricing</a
+          >
+          <a
+            href="./FAQ.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >FAQ</a
+          >
+          <a
+            href="./blog.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Blog</a
+          >
+          <a
+            href="./contactUs.html"
+            class="py-4 block w-full text-center hover:bg-zinc-500/50"
+            >Contact Us</a
+          >
+          <button
+            id="closeButton"
+            class="absolute top-4 right-4 text-2xl leading-normal"
+          >
+            ✖
+          </button>
+        </div>
+        <!-- end menu -->
+        <!--end header -->
+        <div
+          class="flex w-full mobile:flex-col-reverse mobile:gap-y-[50px] tab:flex-row tab:pt-[70px] mobile:pt-[20px] gap-x-[10px] content-center mx-auto mb-[30px]"
+        >
+          <div
+            class="tab:w-[60%] mobile:w-[100%] max-w-[500px] pl-[40px] flex tab:flex-col mobile:flex-row flex-wrap mx-auto"
+          >
+            <h1
+              class="tab:text-[40px] mobile:text-[30px] desk:text-[50px] max-w-[572px] pr-[15px] mx-auto text-left text-[#ffff] tab:leading-[40px] desk:leading-[49px] mobile:leading-[30px] font-semibold"
+            >
+              Building stellar websites for early startups
+            </h1>
+            <p
+              class="text-left w-full text-[#ffff] tab:leading-[20px] mobile:leading-[10px] mobile:text-[8px] tab:text-[12px] desk:text-[14px] text-gray-500 font-normal mt-[14px] mb-[20px] pr-[10px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt. View our work View Pricing
+            </p>
+            <div class="flex flex-row gap-x-3">
+              <a
+                href="./Work.html"
+                class="block tab:w-[140px] mobile:w-[100px] mobile:h-[40px] tab:h-[45px] text-center py-[12px] bg-[#FCD980] rounded-[41px] text-[#1B1C2B] tab:text-[13px] mobile:text-[8px]"
+                >View our work</a
+              >
+              <a
+                href="./pricing.html"
+                class="block w-[120px] h-[28px] tab:text-[12px] mobile:text-[8px] flex flex-row-reverse text-[#ffff] tab:gap-x-2 mobile:gap-x-1 items-center mt-[5px]"
+                ><img
+                  src="./public/images/svg/arrow.svg"
+                  class="tab:w-[18px] mobile:w-[10px]"
+                />View Pricing</a
+              >
+            </div>
+          </div>
+          <div class="w-[40%] max-h-[361.12px] pr-[20px] mx-auto itemes-center">
+            <img
+              class="self-center mx-auto"
+              src="./public/images/Illustration.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- end first-page -->
+      <!-- how it work -->
+      <div
+        class="w-full bg-[#F4F6FC] dark:bg-[#1C1E53]   flex tab:flex-row mobile:flex-col h-fit pb-[20px] box-border pt-[70px] itemes-center gap-x-5 pl-[50px]"
+      >
+        <div class="flex flex-col w-[40%] desk:mx-auto desk:ml-[20px]">
+          <h3 class="w-fit text-[28px] text-[#282938] dark:text-[#fff] font-medium">
+            How we work
+          </h3>
+          <p class="text-[#666773] w-[350px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            harum rerum obcaecati distinctio.
+          </p>
+          <a
+            href=""
+            class="block w-[185px] h-[28px] tab:text-[12px] mobile:text-[12px] mb-[10px] flex flex-row-reverse text-[#2405F2] tab:gap-x-2 mobile:gap-x-1 items-center mt-[5px] text-[#2405F2] mobile:justify-end mobile:pr-[50px] pr-[60px]"
+            ><img
+              src="./public/images/svg/how-we-work/Arrow 2.svg"
+              class="tab:w-[18px] mobile:w-[10px]"
+            />Get in touch with us</a
+          >
+        </div>
+        <div
+          class="flex w-[70%] flex-row tab:flex-nowrap mobile:flex-wrap pl-[10px]"
+        >
+          <div class="desk:mx-auto">
+            <div class="w-[200px] h-[150px]">
+              <div class="relative">
+                <img src="./public/images/svg/how-we-work/1.svg" alt="" />
+                <h2 class="absolute top-1 left-4 text-[#ffff] text-[20px]">
+                  01
+                </h2>
+              </div>
+              <h4 class="text-[20px] text-[#2b2b2b] dark:text-[#fff] font-normal">strategy</h4>
+              <p class="text-[12px] text-[#666773]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
+            </div>
+            <div class="w-[200px] h-[150px]">
+              <div class="relative">
+                <img src="./public/images/svg/how-we-work/1.svg" alt="" />
+                <h2 class="absolute top-1 left-4 text-[#ffff] text-[20px] ">
+                  02
+                </h2>
+              </div>
+              <h4 class="text-[20px] text-[#2b2b2b] dark:text-[#fff] font-normal">Wireframing</h4>
+              <p class="text-[12px] text-[#666773]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
+            </div>
+          </div>
+          <div class="desk:mx-auto">
+            <div class="w-[200px] h-[150px]">
+              <div class="relative">
+                <img src="./public/images/svg/how-we-work/1.svg" alt="" />
+                <h2 class="absolute top-1 left-4 text-[#ffff] text-[20px] ">
+                  03
+                </h2>
+              </div>
+              <h4 class="text-[20px] text-[#2b2b2b] dark:text-[#fff] font-normal">Design</h4>
+              <p class="text-[12px] text-[#666773]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
+            </div>
+            <div class="w-[200px] h-[150px]">
+              <div class="relative">
+                <img src="./public/images/svg/how-we-work/1.svg" alt="" />
+                <h2 class="absolute top-1 left-4 text-[#ffff] text-[20px]">
+                  04
+                </h2>
+              </div>
+              <h4 class="text-[20px] text-[#2b2b2b] dark:text-[#fff] font-normal">Development</h4>
+              <p class="text-[12px] text-[#666773]">
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end how it work -->
+      <!-- our work -->
+      <div
+        class="w-[100%] bg-[#ffff] dark:bg-[#101237]  flex flex-wrap tab:flex-row mobile:flex-col h-fit pb-[20px] box-border pt-[70px] itemes-center gap-x-5 pl-[50px]"
+      >
+        <div class="flex flex-row flex-wrap w-[100%] mb-[30px]">
+          <h2 class="text-[#282938] dark:text-[#fff] font-medium text-[24px] w-[80%]">
+            View our projects
+          </h2>
+          <a
+            href=""
+            class="block w-[100px] h-[28px] tab:text-[10px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 items-center mt-[5px] text-[#282938] dark:text-[#fff] font-normal"
+            ><img
+              src="./public/images/svg/arrow2.svg"
+              class="tab:w-[18px] mobile:w-[10px]"
+            />View more</a
+          >
+        </div>
+        <div class="w-[100%] flex mobile:flex-col gap-[20px] tab:flex-row">
+          <div class="w-[60%] relative mx-auto moble:max-h-[190px]">
+            <div
+              class="absolute top-0 left-0 h-full w-[45%] bg-indigo-950 bg-opacity-75 flex flex-col tab:gap-y-[10px] mobile:gap-y-[5px] items-end mobile:p-[5px] tab:p-[18px] desk:max-w-[30%] overflow-hidden"
+            >
+              <div class="tab:h-[40%] mobile:h-[14%]"></div>
+              <h3
+                class="text-[#ffff] tab:text-[24px] font-medium mobile:text-[10px]"
+              >
+                Workhub office Webflow Webflow Design
+              </h3>
+              <p
+                class="tab:text-[12px] text-[#F4F6FC] mobile:leading-[7px] tab:leading-[15px] mobile:text-[6px]"
+              >
+                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                aliquam
+              </p>
+              <a
+                href=""
+                class="block w-[100%] h-[28px] tab:text-[12px] mobile:text-[5px] flex flex-row-reverse text-[#FCD980] tab:gap-x-2 mobile:gap-x-1 items-center mt-[5px] text-[#2405F2] mobile:justify-end"
+                ><img
+                  src="./public/images/svg/yellow-arrow.svg"
+                  class="tab:w-[18px] mobile:w-[5px]"
+                />Get in touch with us</a
+              >
+            </div>
+            <img
+              src="./public/images/1.jpg"
+              class="desk:w-[846px] h-auto"
+              alt=""
+            />
+          </div>
+          <div class="w-[40%] flex mobile:flex-row tab:flex-col gap-[20px]">
+            <img
+              class="w-[405px] mx-auto"
+              src="./public/images/card/Hover Overlay.png"
+              alt=""
+            />
+            <img
+              class="w-[405px] mx-auto"
+              src="./public/images/card/Card.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!--end our work -->
+      <!-- features -->
+      <div class="w-full flex flex-col text-center bg-[#F5F2F0] dark:bg-[#1C1E53] p-[40px]">
+        <div class="items-center w-full mb-[20px]">
+          <h4 class="text-[16px] text-[#282938] dark:text-[#fff] mx-auto font-medium">
+            Features
+          </h4>
+          <h3
+            class="mobile:text-[35px] tab:text-[45px] text-[#282938] dark:text-[#fff] mx-auto max-w-[630px] font-semibold leading-[50px]"
+          >
+            Design that solves problems, one product at a time
+          </h3>
+        </div>
+        <div
+          class="flex flex-row flex-wrap items-center w-full text-[#2b2b2b] dark:text-[#fff] mx-auto gap-y-[20px] px-[50px] mb-[20px]"
+        >
+          <div
+            class="bg-[#ffff] dark:bg-[#101237] flex flex-col gap-y-[10px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 items-start w-[405px] h-[300px] text-left mx-auto py-[50px] px-[15px]"
+          >
+            <img
+              class="w-[32px]"
+              src="./public/images/svg/features/Icon.svg"
+              alt=""
+            />
+            <h4 class="text-[24px] font-medium">Uses Client First</h4>
+            <p class="text-[15px]">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div
+            class="bg-[#ffff] dark:bg-[#101237] flex flex-col gap-y-[10px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 items-start w-[405px] h-[300px] text-left mx-auto py-[50px] px-[15px]"
+          >
+            <img
+              class="w-[32px]"
+              src="./public/images/svg/features/Icon (1).svg"
+              alt=""
+            />
+            <h4 class="text-[24px] font-medium">Two Free Revision Round</h4>
+            <p class="text-[15px]">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div
+            class="bg-[#ffff] dark:bg-[#101237] flex flex-col gap-y-[10px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 items-start w-[405px] h-[300px] text-left mx-auto py-[50px] px-[15px]"
+          >
+            <img
+              class="w-[32px]"
+              src="./public/images/svg/features/Icon (2).svg"
+              alt=""
+            />
+            <h4 class="text-[24px] font-medium">Template Customization</h4>
+            <p class="text-[15px]">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div
+            class="bg-[#ffff] dark:bg-[#101237] flex flex-col gap-y-[10px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 items-start w-[405px] h-[300px] text-left mx-auto py-[50px] px-[15px]"
+          >
+            <img
+              class="w-[32px]"
+              src="./public/images/svg/features/Icon (3).svg"
+              alt=""
+            />
+            <h4 class="text-[24px] font-medium">24/7 Support</h4>
+            <p class="text-[15px]">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div
+            class="bg-[#ffff] dark:bg-[#101237] flex flex-col gap-y-[10px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 items-start w-[405px] h-[300px] text-left mx-auto py-[50px] px-[15px]"
+          >
+            <img
+              class="w-[32px]"
+              src="./public/images/svg/features/Icon (4).svg"
+              alt=""
+            />
+            <h4 class="text-[24px] font-medium">Quick Delivery</h4>
+            <p class="text-[15px]">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+          <div
+            class="bg-[#ffff] dark:bg-[#101237] flex flex-col gap-y-[10px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 items-start w-[405px] h-[300px] text-left mx-auto py-[50px] px-[15px]"
+          >
+            <img
+              class="w-[32px]"
+              src="./public/images/svg/features/Icon (5).svg"
+              alt=""
+            />
+            <h4 class="text-[24px] font-medium">Hands-on approach</h4>
+            <p class="text-[15px]">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+              aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
+              aliquam sed mi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--end features -->
+      <!--testimonias -->
+      <div
+        class="w-full flex mobile:flex-col tab:flex-row bg-[#F4F6FC] dark:bg-[#1C1E53] itemes-center gap-x-[20px] mt-[50px] mb-[100px]"
+      >
+        <div
+          class="w-[20%] m-[20px] gap-x-[15px] mobile:mx-[30px] tab:mx-auto min-w-[300px]"
+        >
+          <h3
+            class="text-[38px] w-fit text-[#282938] dark:text-[#fff] font-medium leading-[56px]"
+          >
+            What our clients say about us
+          </h3>
+          <p class="text-[15px] text-[#282938] dark:text-[#fff] opacity-50">
+            Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam
+            sed
+          </p>
+        </div>
+        <div class="mx-auto bg-transparent dark:bg-[#FCD980] rounded-[8px] p-[10px]">
+          <img
+            class="w-[830px] p-[20px]"
+            src="./public/images/Content.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!--end testimonias -->
+      <!-- fAQ -->
+      <div
+        class="w-full flex mobile:flex-col overflow-hidden tab:flex-row bg-[#ffff] dark:bg-[#1C1E53] tab:itemes-center gap-x-[20px] mt-[50px] mb-[100px]"
+      >
+        <div
+          class="w-[20%] m-[20px] gap-x-[15px] mobile:mx-[30px] tab:mx-auto min-w-[300px]"
+        >
+          <h3
+            class="text-[38px] w-fit text-[#282938] dark:text-[#fff] font-medium leading-[56px]"
+          >
+            Frequently asked questions
+          </h3>
+          <p class="text-[15px] mt-[20px] text-[#2405F2]">
+            Contact us for more info
+          </p>
+        </div>
+        <div class="max-w-lg mx-auto overflow-hidden">
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap mx-auto flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                01
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:text-[18px] mobile:min-w-[150px]"
+              >
+                How much time does it take?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer1')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer1"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                02
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:ml-[20px] mobile:ml-[10px] tab:text-[18px] mobile:min-w-[150px]"
+              >
+                What is your class naming convention?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer2')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer2"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                03
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:text-[18px] mobile:min-w-[150px]"
+              >
+                How do you communicat?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer3')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer3"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                04
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:text-[18px] mobile:ml-[10px] tab:ml-[20px] mobile:min-w-[150px]"
+              >
+                I have a bigger project can you handel it?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer4')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer4"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div
+            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
+          >
+            <div
+              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+            >
+              <h3
+                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              >
+                05
+              </h3>
+              <h2
+                class="flex-auto font-normal mobile:text-[15px] tab:ml-[20px] mobile:ml-[10px] tab:text-[18px] mobile:min-w-[150px]"
+              >
+                What is your class naming convection?
+              </h2>
+              <button
+                id="flex-1 toggleButton"
+                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
+                onclick="toggleAnswer('answer5')"
+              >
+                +
+              </button>
+            </div>
+            <div
+              id="answer5"
+              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end fAQ -->
+      <!--contact form  -->
+      <div class="w-full bg-blue-500  flex mobile:flex-col tab:flex-row mx-auto">
+        <div class="bg-[#1C1E53] dark:bg-[#101237] relative mobile:full tab:w-[50%]">
+          <img class="h-full opacity-50" src="./public/images/2.jpg" alt="" />
+          <div
+            class="top-20 left-10 absolute text-left mx-auto flex flex-col gap-y-[20px]"
+          >
+            <h3
+              class="mobile:text-[30px] tab:text-[45px] font-semibold text-[#ffff] mobile:leading-[30px] tab:leading-[40px] max-w-[300px]"
+            >
+              Building stellar websites for early startups
+            </h3>
+            <p
+              class="mobile:text-[10px] tab:text-[15px] text-[#ffff] tab:leading-[15px] mobile:leading-[10px] max-w-[300px] opacity-50"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              eveniet ullam incidunt consequatur facere obcaecati. Corporis
+              dolorem nisi labore temporibus deleniti? Rerum inven
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-[#1C1E53] dark:bg-[#101237] mobile:w-full tab:w-[50%] flex itemes-center flex-col gap-y-4"
+        >
+          <form
+            class="w-[60%] mx-auto mt-[50px] flex itemes-center flex-col gap-y-[10px]"
+          >
+            <h4
+              class="text-[#ffff] w-fit mt-[20px] mobile:text-[30px] tab:text-[38px] font-semibold"
+            >
+              Send inquiry
+            </h4>
+            <p
+              class="w-full text-[#ffff] mobile:text-[10px] tab:text-[16px] opacity-75"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod,
+              asperiores! Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ad, ut?
+            </p>
+            <input
+              type="text"
+              placeholder="YourName"
+              class="w-full block min-h-[auto] px-3 py-[0.32rem] leading-[35px] mt-[20px] outline-none bg-transparent border border-stone-600 text-[#ffff]"
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              class="w-full block min-h-[auto] px-3 py-[0.32rem] leading-[35px] mt-[20px] outline-none bg-transparent border border-stone-600 text-[#ffff]"
+            />
+            <input
+              type="text"
+              placeholder="Paste your Figma Design URL"
+              class="w-full block min-h-[auto] px-3 py-[0.32rem] leading-[35px] mt-[20px] outline-none bg-transparent border border-stone-600 text-[#ffff]"
+            />
+            <button
+              class="inline-block text-center w-full bg-[#FCD980] leading-[50px] rounded-[20px] font-semibold mb-[10px] text-[17px] h-[50px] mt-[20px]"
+            >
+              Send an inquiry
+            </button>
+            <a
+              href=""
+              class="inline-block w-full h-[28px] text-[14px] flex flex-row-reverse text-[#ffff] text-center tab:gap-x-2 mobile:gap-x-1 justify-center mb-[30px]"
+              ><img
+                src="./public/images/svg/arrow.svg"
+                class="tab:w-[18px] mobile:w-[10px]"
+              />
+              <h4>Get in youch with us</h4></a
+            >
+          </form>
+        </div>
+      </div>
+      <!--end contact form  -->
+      <!-- blog -->
+      <div class="w-full flex flex-col">
+        <h3
+          class="w-full text-[35px] pl-[50px] text-[#2b2b2b] dark:text-[#fff] ml-[20px] mt-[20px] mb-[20px] font-medium"
+        >
+          Our blog
+        </h3>
+        <div
+          class="w-full  mx-auto flex mobile:flex-col desk:flex-row justify-center gap-x-[40px] gap-y-[20px]"
+        >
+          <div
+            class="flex w-[350px] mobile:mx-auto border-2 border-opacity-50 p-[20px] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-100 duration-300 desk:mx-[0] text-[#282938] dark:text-[#fff] flex-col gap-y-[15px] justify-center"
+          >
+            <img class="w-[405px]" src="./public/images/blog/1.jpg" alt="" />
+            <h5 class="w-full opacity-70">19 Jan 2022</h5>
+            <h4 class="text-[22px] leading-[28px] font-medium">
+              How one Webflow user grew his single person consultancy from
+              $0-100K in 14 months
+            </h4>
+            <p class="text-[15px] leading-[20px] font-normal opacity-80">
+              See how pivoting to Webflow changed one person’s sales strategy
+              and allowed him to attract
+            </p>
+            <a
+              href=""
+              class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] leading-[25px] font-normal"
+              ><img
+                src="./public/images/svg/arrow2.svg"
+                class="tab:w-[18px] mobile:w-[10px]"
+              />Read more</a
+            >
+          </div>
+          <div
+            class="flex w-[350px] mobile:mx-auto border-2 border-opacity-50 p-[20px] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-100 duration-300 desk:mx-[0] text-[#282938] dark:text-[#fff] flex-col gap-y-[15px] justify-center"
+          >
+            <img class="w-[405px]" src="./public/images/blog/2.jpg" alt="" />
+            <h5 class="w-full opacity-70">19 Jan 2022</h5>
+            <h4 class="text-[22px] leading-[28px] font-medium">
+              How one Webflow user grew his single person consultancy from
+              $0-100K in 14 months
+            </h4>
+            <p class="text-[15px] leading-[20px] font-normal opacity-80">
+              See how pivoting to Webflow changed one person’s sales strategy
+              and allowed him to attract
+            </p>
+            <a
+              href=""
+              class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] leading-[25px] font-normal"
+              ><img
+                src="./public/images/svg/arrow2.svg"
+                class="tab:w-[18px] mobile:w-[10px]"
+              />Read more</a
+            >
+          </div>
+          <div
+            class="flex w-[350px] mobile:mx-auto border-2 border-opacity-50 p-[20px] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-100 duration-300 desk:mx-[0] text-[#282938] dark:text-[#fff] flex-col gap-y-[15px] justify-center"
+          >
+            <img class="w-[405px]" src="./public/images/blog/3.jpg" alt="" />
+            <h5 class="w-full opacity-70">19 Jan 2022</h5>
+            <h4 class="text-[22px] leading-[28px] font-medium">
+              How one Webflow user grew his single person consultancy from
+              $0-100K in 14 months
+            </h4>
+            <p class="text-[15px] leading-[20px] font-normal opacity-80">
+              See how pivoting to Webflow changed one person’s sales strategy
+              and allowed him to attract
+            </p>
+            <a
+              href=""
+              class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] leading-[25px] font-normal"
+              ><img
+                src="./public/images/svg/arrow2.svg"
+                class="tab:w-[18px] mobile:w-[10px]"
+              />Read more</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--end blog -->
+      <!-- footer -->
+      <div class="w-full flex flex-wrap mt-[30px] bg-[#1C1E53] dark:bg-[#101237] justify-center">
+        <div class="tab:w-[40%] h-[200px] mx-auto">
+          <div class="w-full mt-[40px] tab:pl-[60px]">
+            <img src="./public/images/Logo.png" alt="" />
+          </div>
+          <div class="w-full mt-[20px] text-[#fff] tab:pl-[60px] text-[15px]">
+            <p class="w-[380px]">
+              We are always open to discuss your project and improve your online
+              presence.
+            </p>
+          </div>
+          <div
+            class="w-[80%] mobile:min-w-[450px] tab:min-w-[480px] bg-[#FCD980] mx-auto flex flex-row h-[80px] tab:p-[10px] mt-[20px] mobile:ml-[0px] tab:mx-auto mb-[20px] rounded-[9px]"
+          >
+            <div class="w-[45%] flex flex-col text-[#282938]  mx-auto">
+              <h4 class="font-medium text-[16px]">Email me at</h4>
+              <p class="block">contact@website.com</p>
+            </div>
+            <div class="w-[45%] flex flex-col text-[#282938]  mx-auto">
+              <h4 class="font-medium text-[16px]">Call us</h4>
+              <p class=" ">0927 6277 28525</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mobile: tab:w-[40%] h-[200px] mx-auto text-[#fff] mb-[20px]"
+        >
+          <h2 class="w-full pl-[10px] text-[28px] mt-[40px] font-medium">
+            Lets Talk!
+          </h2>
+          <p class="w-[400px] opacity-50 pl-[10px] text-[13px]">
+            We are always open to discuss your project, improve your online
+            presence and help with your UX/UI design challenges.
+          </p>
+          <div
+            class="flex flex-row flex-nowrap gap-x-[20px] pl-[10px] mt-[10px]"
+          >
+            <img src="./public/images/icon/1.png" alt="" />
+            <img src="./public/images/icon/2.png" alt="" />
+            <img src="./public/images/icon/3.png" alt="" />
+            <img src="./public/images/icon/4.png" alt="" />
+          </div>
+        </div>
+        <div class="w-full bg-[#fff] dark:bg-[#1C1E53] flex text-[#282938] dark:text-[#fff] pb-[20px]">
+          <div class="w-[50%]"><p>Copyright 2022, Finsweet.com</p></div>
+          <nav
+            class="tab:flex mobile:hidden flex-row gap-x-5 w-[50%] box-border justify-end pr-[20px] leading-[28px] font-medium text-center"
+          >
+            <a
+              href="#"
+              class="block h-7 w-fit items-center hover:border-b-2 hover:border-[#BBBBCB] text-sm"
+              >Home</a
+            >
+            <a
+              href="./aboutus.html"
+              class="block h-7 min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
+              >About us</a
+            >
+            <a
+              href="./features.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Features</a
+            >
+            <a
+              href="./pricing.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Pricing</a
+            >
+            <a
+              href="./FAQ.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >FAQ</a
+            >
+            <a
+              href="./blog.html"
+              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+              >Blog</a
+            >
+          </nav>
+        </div>
+      </div>
+      <!--end footer -->
+    </div>
+    <!-- darkmod -->
+    <button class="btn w-[200px] text-[#fff] w-[80px] bg-[#454545] fixed top-80 ">Dark </button>
+
+    <!--end wrapper -->
+    <!--end project -->
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const menu = document.getElementById("menu");
+      const closeButton = document.getElementById("closeButton");
+
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      closeButton.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    </script>
+    <script>
+      function toggleAnswer(answerId) {
+        const answer = document.getElementById(answerId);
+
+        if (answer.style.display === "none" || answer.style.display === "") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+      let btn=document.querySelector(".btn")
+      btn.addEventListener("click",function(){
+        document.body.classList.toggle("dark")
+      })
+    </script>
+  </body>
+</html>
