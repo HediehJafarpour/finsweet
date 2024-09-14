@@ -5,190 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finsweet-Features</title>
     <link rel="stylesheet" href="./public/css/main.css" />
-    <style>
-      @font-face {
-        font-family: "poppins";
-        src: url(./public/font/Poppins-Regular.ttf) format("ttf");
-        src: url(./public/font/Poppins-Regular.woff) format("woff");
-      }
-      * {
-        font-family: "poppins";
-      }
-      .menu {
-        display: none;
-      }
-      .menu.active {
-        display: flex;
-      }
-    </style>
   </head>
 
   <body>
     <!--project -->
     <!-- wrapper -->
-    <div class="overflow-hidden dark:bg-[#1C1E53] relative">
-      <!-- first-page -->
-      <div
-        class="w-full bg-[#1C1E53] dark:bg-[#101237] flex flex-col h-fit pb-[40px] box-border"
-      >
-        <!-- header -->
-        <div class="w-full flex flex-col h-fit pb-[40px] box-border">
-          <!-- header -->
+    <div class="overflow-hidden bg-[#fff] dark:bg-[#1C1E53] relative">
+      <!-- header -->
+      <header>
+        <nav
+          class="flex justify-items-stretch items-center w-full bg-[#1C1E53] dark:bg-[#101237] fixed top-0 z-40"
+        >
+          <div class="mx-4 mobile:w-[90%] tab:w-[80%]">
+            <img src="./public/images/Logo.png" alt="" />
+          </div>
           <div
-            class="grid grid-cols-1 bg-[#1C1E53] dark:bg-[#101237] w-full h-[82px] grid-rows-1 px-[30px] pt-4 pr-[10px]"
+            class="nav-links mobile:duration-500 tab:duration-0 mobile:fixed tab:static mobile:min-h-[30vh] tab:min-h-fit left-0 top-[-100%] mobile:bg-[#1C1E53] dark:mobile:bg-[#101237] mobile:bg-opacity-90 dark:mobile:bg-opacity-90 tab:bg-transparent mobile:w-full tab:w-auto flex py-2 justify-self-end pl-[20px]"
           >
-            <div class="w-[200px] h-full justify-self-start mt-2 row-start-1">
-              <img class="w-[122px]" src="./public/images/Logo.png" alt="" />
-            </div>
-
-            <button
-              id="menuButton"
-              class="w-9 h-9 bg-blue-500 tab:hidden text-white rounded-md focus:outline-none justify-self-end row-start-1"
+            <ul
+              class="flex mobile:flex-col tab:flex-row w-full mobile:items-start tab:itemes-center tab:gap-2 mobile:gap-4 text-center"
             >
-              ☰
-            </button>
-
-            <div
-              class="tab:flex mobile:hidden flex-row gap-x-8 w-[70%] h-full row-start-1 justify-self-end justify-end box-borded"
-            >
-              <nav
-                class="tab:flex mobile:hiddem flex-row-nowrap gap-x-5 box-border justify-items-end pt-[10px] leading-[28px]"
-              >
+              <li>
                 <a
                   href="./index.html"
-                  class="block h-7 w-fit items-center text-[#ffff] hover:border-b-2 hover:border-[#BBBBCB] text-sm font-bold"
+                  class="block ease-in-out delay-150 hover:-translate-y-0.5 hover:scale-100 duration-300 text-center tab:py-3 px-2 hover:border-b-2 text-[14px] text-[#fff] hover:border-[#ffff] font-bold"
                   >Home</a
                 >
+              </li>
+              <li>
                 <a
                   href="./aboutus.html"
-                  class="block h-7 text-[#BBBBCB] min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
+                  class="block ease-in-out delay-150 hover:-translate-y-0.5 hover:scale-100 duration-300 mobile:text-left tab:text-center tab:py-3 px-2 hover:border-b-2 text-[14px] text-[#fff] hover:border-[#ffff] font-normal opacity-80 min-w-[88px]"
                   >About us</a
                 >
+              </li>
+              <li>
                 <a
                   href="./features.html"
-                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  class="block ease-in-out delay-150 hover:-translate-y-0.5 hover:scale-100 duration-300 text-center tab:py-3 px-2 hover:border-b-2 text-[14px] text-[#fff] hover:border-[#ffff] font-normal opacity-80"
                   >Features</a
                 >
+              </li>
+              <li>
                 <a
                   href="./pricing.html"
-                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  class="block ease-in-out delay-150 hover:-translate-y-0.5 hover:scale-100 duration-300 text-center tab:py-3 px-2 hover:border-b-2 text-[14px] text-[#fff] hover:border-[#ffff] font-normal opacity-80"
                   >Pricing</a
                 >
+              </li>
+              <li>
                 <a
                   href="./FAQ.html"
-                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  class="block ease-in-out delay-150 hover:-translate-y-0.5 hover:scale-100 duration-300 text-center tab:py-3 px-2 hover:border-b-2 text-[14px] text-[#fff] hover:border-[#ffff] font-normal opacity-80"
                   >FAQ</a
                 >
+              </li>
+              <li>
                 <a
                   href="./blog.html"
-                  class="block h-7 text-[#BBBBCB] hover:border-b-2 text-sm hover:border-[#BBBBCB]"
+                  class="block ease-in-out delay-150 hover:-translate-y-0.5 hover:scale-100 duration-300 text-center tab:py-3 px-2 hover:border-b-2 text-[14px] text-[#fff] hover:border-[#ffff] font-normal opacity-80"
                   >Blog</a
                 >
-              </nav>
-              <a
-                href="./contactUs.html"
-                class="block text-[#ffff] font-medium border-[#F4F6FC] text-sm min-w-[120px] text-center h-[40px] rounded-[41px] border-2 border-[#5c5d83] pt-[4px] leading-[28px]"
-                >Contsct us</a
-              >
-            </div>
+              </li>
+              <li>
+                <a
+                  href="./contactUs.html"
+                  class="block tab:w-[130px] tab:ml-2 mobile:px-2 tab:py-3 tab:px-2 tab:border-2 tab:rounded-full text-[14px] text-[#fff] mobile:hover:border-b-2 ease-in-out delay-150 hover:-translate-y-0.5 hover:scale-100 duration-300"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
           </div>
-          <!-- menu -->
-          <div
-            id="menu"
-            class="menu inset-0 bg-gray-800 bg-opacity-90 flex-col items-center justify-center text-white text-3xl mobile:fixed tab:hidden pt-[100px] z-20"
-          >
-            <a
-              href="./index.html"
-              class="py-4 block w-full text-center hover:bg-zinc-500/50"
-              >Home</a
-            >
-            <a
-              href="./aboutus.html"
-              class="py-4 block w-full text-center hover:bg-zinc-500/50"
-              >About Us</a
-            >
-            <a
-              href="./features.html"
-              class="py-4 block w-full text-center hover:bg-zinc-500/50"
-              >Features</a
-            >
-            <a
-              href="./pricing.html"
-              class="py-4 block w-full text-center hover:bg-zinc-500/50"
-              >Pricing</a
-            >
-            <a
-              href="./FAQ.html"
-              class="py-4 block w-full text-center hover:bg-zinc-500/50"
-              >FAQ</a
-            >
-            <a
-              href="./blog.html"
-              class="py-4 block w-full text-center hover:bg-zinc-500/50"
-              >Blog</a
-            >
-            <a
-              href="./contactUs.html"
-              class="py-4 block w-full text-center hover:bg-zinc-500/50"
-              >Contact Us</a
-            >
-            <button
-              id="closeButton"
-              class="absolute top-4 right-4 text-2xl leading-normal"
-            >
-              ✖
-            </button>
+          <div class="flex p-4 justify-self-end">
+            <ion-icon
+              onclick="onToggleMenu(this)"
+              name="menu"
+              class="cursor-pointer text-3xl tab:hidden text-[#fff]"
+            ></ion-icon>
           </div>
-          <!-- end menu -->
-          <!--end header -->
-        </div>
-        <!-- menu -->
-        <div
-          id="menu"
-          class="menu inset-0 z-20 bg-gray-800 bg-opacity-90 flex-col items-center justify-center text-white text-3xl mobile:fixed tab:hidden pt-[100px]"
-        >
-          <a href="./index.html" class="py-4 block w-full text-center hover:bg-zinc-500/50"
-            >Home</a
-          >
-          <a
-            href="./aboutus.html"
-            class="py-4 block w-full text-center hover:bg-zinc-500/50"
-            >About Us</a
-          >
-          <a
-            href="./features.html"
-            class="py-4 block w-full text-center hover:bg-zinc-500/50"
-            >Features</a
-          >
-          <a
-            href="./pricing.html"
-            class="py-4 block w-full text-center hover:bg-zinc-500/50"
-            >Pricing</a
-          >
-          <a
-            href="./FAQ.html"
-            class="py-4 block w-full text-center hover:bg-zinc-500/50"
-            >FAQ</a
-          >
-          <a
-            href="./blog.html"
-            class="py-4 block w-full text-center hover:bg-zinc-500/50"
-            >Blog</a
-          >
-          <a
-            href="./contactUs.html"
-            class="py-4 block w-full text-center hover:bg-zinc-500/50"
-            >Contact Us</a
-          >
-          <button
-            id="closeButton"
-            class="absolute top-4 right-4 text-2xl leading-normal"
-          >
-            ✖
-          </button>
-        </div>
-        <!-- end menu -->
-        <!--end header -->
+        </nav>
+      </header>
+      <!-- end header -->
+      <!-- first-page -->
+      <div
+        class="w-full bg-[#1C1E53] pt-[62px] dark:bg-[#101237] flex flex-col h-fit pb-[40px] box-border"
+      >
         <div
           class="flex w-full mobile:flex-col-reverse mobile:gap-y-[50px] tab:flex-row tab:pt-[70px] mobile:pt-[20px] gap-x-[10px] content-center mx-auto mb-[30px]"
         >
@@ -224,12 +125,9 @@
         </div>
       </div>
       <div
-        class="f-full flex flex-col justify-center dark:text-[#fff] my-[50px]"
-      >
-        <div
-          class="flex w-full tab:flex-row mobile:flex-col mx-auto max-w-[1200px] dark:bg-[#FCD980] justify-center mt-[20px]"
+          class="flex w-full tab:flex-row mobile:flex-col text-[#2b2b2b] p-[30px] mx-auto max-w-[1200px] dark:bg-[#FCD980] justify-center mt-[20px]"
         >
-          <div class="w-[200px] flex flex-col mobile:mx-auto tab:mx-0">
+          <div class="w-fit mobile:pl-[10px]  flex flex-col mobile:mx-auto tab:mx-0">
             <h5 class="font-bold opacity-80 dark:text-[#2b2b2b] text-[30px]">
               100.000+
             </h5>
@@ -239,45 +137,44 @@
               Finsweet Users
             </p>
           </div>
-          <div class="flex flex-row gap-[25px]">
-            <div class="w-[110px] pt-[20px]">
+          <div class="flex mobile:flex-col w-full justify-center  tab:flex-row gap-[25px]">
+            <div class="w-[100px] pt-[20px] mobile:mx-auto tab:mx-0  ">
               <img
-                class="m-auto w-[110px]"
+                class=" w-[90px]"
                 src="./public/images/logos/Logo 1.png"
                 alt=""
               />
             </div>
-            <div class="w-[110px] pt-[20px]">
+            <div class="w-[100px] pt-[20px] mobile:mx-auto tab:mx-0  ">
               <img
-                class="m-auto w-[110px]"
+                class=" w-[90px]"
                 src="./public/images/logos/Logo 2.png"
                 alt=""
               />
             </div>
-            <div class="w-[110px] pt-[20px]">
+            <div class="w-[100px] pt-[20px] mobile:mx-auto tab:mx-0  ">
               <img
-                class="m-auto w-[110px]"
+                class=" w-[90px]"
                 src="./public/images/logos/Logo 3.png"
                 alt=""
               />
             </div>
-            <div class="w-[110px] pt-[20px]">
+            <div class="w-[100px] pt-[20px] mobile:mx-auto tab:mx-0  ">
               <img
-                class="m-auto w-[110px]"
+                class=" w-[90px]"
                 src="./public/images/logos/Logo 4.png"
                 alt=""
               />
             </div>
-            <div class="w-[110px] pt-[20px]">
+            <div class="w-[100px] pt-[20px] mobile:mx-auto tab:mx-0  ">
               <img
-                class="m-auto w-[110px]"
+                class=" w-[90px]"
                 src="./public/images/logos/Logo 5.png"
                 alt=""
               />
             </div>
           </div>
         </div>
-      </div>
       <!-- benefits -->
       <div
         class="f-full flex flex-col justify-center dark:text-[#fff] my-[50px]"
@@ -291,7 +188,7 @@
           class="flex w-full tab:flex-row mobile:flex-col mx-auto gap-[40px] max-w-[1200px] justify-center mt-[20px]"
         >
           <div
-            class="bg-[#ffff] dark:bg-[#101237] mx-auto flex flex-col gap-y-[10px] items-start transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 w-[350px] px-[20px] h-[300px] text-left bg-[#EEF4FA] py-[50px]"
+            class="bg-[#ffff] dark:bg-[#101237] mx-auto flex flex-col gap-y-[10px] items-start transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 w-[350px] px-[20px] h-[300px] text-left bg-[#EEF4FA] text-[#1c1e53] dark:text-[#fff] py-[50px]"
           >
             <img
               class="w-[32px]"
@@ -306,7 +203,7 @@
             </p>
           </div>
           <div
-            class="bg-[#ffff] dark:bg-[#101237] mx-auto flex flex-col gap-y-[10px] items-start transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 w-[350px] px-[20px] h-[300px] text-left bg-[#EEF4FA] py-[50px]"
+            class="bg-[#ffff] dark:bg-[#101237] mx-auto flex flex-col gap-y-[10px] items-start transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 w-[350px] px-[20px] h-[300px] text-left bg-[#EEF4FA] text-[#1c1e53] dark:text-[#fff] py-[50px]"
           >
             <img
               class="w-[32px]"
@@ -321,7 +218,7 @@
             </p>
           </div>
           <div
-            class="bg-[#ffff] dark:bg-[#101237] mx-auto flex flex-col gap-y-[10px] items-start transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 w-[350px] px-[20px] h-[300px] text-left bg-[#EEF4FA] py-[50px]"
+            class="bg-[#ffff] dark:bg-[#101237] mx-auto flex flex-col gap-y-[10px] items-start transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 w-[350px] px-[20px] h-[300px] text-left bg-[#EEF4FA] text-[#1c1e53] dark:text-[#fff] py-[50px]"
           >
             <img
               class="w-[32px]"
@@ -424,9 +321,7 @@
       <div
         class="w-full flex mobile:flex-col overflow-hidden tab:flex-row bg-[#ffff] dark:bg-[#1C1E53] tab:itemes-center gap-x-[20px] mt-[50px] mb-[100px]"
       >
-        <div
-          class="w-[20%] m-[20px] gap-x-[15px] mx-auto min-w-[300px]"
-        >
+        <div class="w-[20%] m-[20px] gap-x-[15px] mx-auto min-w-[300px]">
           <h3
             class="text-[35px] mobile:w-full tab:w-fit text-[#282938] dark:text-[#fff] font-medium leading-[56px]"
           >
@@ -436,165 +331,93 @@
             Contact us for more info
           </p>
         </div>
-        <div class="max-w-lg mx-auto overflow-hidden">
-          <div
-            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
-          >
+        <div
+          class="max-w-lg tab:mx-auto overflow-hidden flex flex-col gap-y-[5px]"
+        >
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
+            <input type="radio" name="my-accordion-3" checked="checked" />
             <div
-              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap mx-auto flex-start"
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
             >
-              <h3
-                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
-              >
-                01
-              </h3>
-              <h2
-                class="flex-auto font-normal mobile:text-[15px] tab:text-[18px] mobile:min-w-[150px]"
-              >
-                How much time does it take?
-              </h2>
-              <button
-                id="flex-1 toggleButton"
-                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
-                onclick="toggleAnswer('answer1')"
-              >
-                +
-              </button>
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >1</span
+              >How much time does it take?
             </div>
-            <div
-              id="answer1"
-              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="collapse-content">
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div
-            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
-          >
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
+            <input type="radio" name="my-accordion-3" checked="checked" />
             <div
-              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
             >
-              <h3
-                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
-              >
-                02
-              </h3>
-              <h2
-                class="flex-auto font-normal mobile:text-[15px] tab:ml-[20px] mobile:ml-[10px] tab:text-[18px] mobile:min-w-[150px]"
-              >
-                What is your class naming convention?
-              </h2>
-              <button
-                id="flex-1 toggleButton"
-                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
-                onclick="toggleAnswer('answer2')"
-              >
-                +
-              </button>
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >2</span
+              >What is your class naming convention?
             </div>
-            <div
-              id="answer2"
-              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="collapse-content">
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div
-            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
-          >
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
+            <input type="radio" name="my-accordion-3" checked="checked" />
             <div
-              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
             >
-              <h3
-                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
-              >
-                03
-              </h3>
-              <h2
-                class="flex-auto font-normal mobile:text-[15px] tab:text-[18px] mobile:min-w-[150px]"
-              >
-                How do you communicat?
-              </h2>
-              <button
-                id="flex-1 toggleButton"
-                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
-                onclick="toggleAnswer('answer3')"
-              >
-                +
-              </button>
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >3</span
+              >How do you communicat?
             </div>
-            <div
-              id="answer3"
-              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="collapse-content">
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div
-            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
-          >
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
+            <input type="radio" name="my-accordion-3" checked="checked" />
             <div
-              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
             >
-              <h3
-                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
-              >
-                04
-              </h3>
-              <h2
-                class="flex-auto font-normal mobile:text-[15px] tab:text-[18px] mobile:ml-[10px] tab:ml-[20px] mobile:min-w-[150px]"
-              >
-                I have a bigger project can you handel it?
-              </h2>
-              <button
-                id="flex-1 toggleButton"
-                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
-                onclick="toggleAnswer('answer4')"
-              >
-                +
-              </button>
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >4</span
+              >I have a bigger project can you handel it?
             </div>
-            <div
-              id="answer4"
-              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="collapse-content">
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div
-            class="bg-white mobile:flex-col tab:flex-row p-4 rounded-lg mobile:flex-wrap tab:flex-nowrap shadow-md mb-4"
-          >
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
+            <input type="radio" name="my-accordion-3" checked="checked" />
             <div
-              class="flex flex-row gap-x-[5px] mobile:flex-wrap tab:flex-nowrap flex-start"
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
             >
-              <h3
-                class="flex-1 text-[25px] mobile:max-w-[35px] tab:max-w-[50px] leading-[30px] text-blue-500 font-semibold"
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >5</span
               >
-                05
-              </h3>
-              <h2
-                class="flex-auto font-normal mobile:text-[15px] tab:ml-[20px] mobile:ml-[10px] tab:text-[18px] mobile:min-w-[150px]"
-              >
-                What is your class naming convection?
-              </h2>
-              <button
-                id="flex-1 toggleButton"
-                class="mobile:ml-[10px] tab:ml-[50px] px-4 py-2 bg-blue-500 text-white flex-end rounded hover:bg-blue-700"
-                onclick="toggleAnswer('answer5')"
-              >
-                +
-              </button>
+              What is your class naming convection?
             </div>
-            <div
-              id="answer5"
-              class="answer hidden mt-2 text-gray-700 mobile:w-[350px] tab:w-[450px] text-left mobile:text-[12px] tab:text-[15px] mobile:pl-[20px] tab:pl-[60px]"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="collapse-content">
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
         </div>
@@ -602,47 +425,45 @@
 
       <!-- footer -->
       <div
-        class="w-full flex flex-wrap mt-[30px] bg-[#1C1E53] dark:bg-[#101237] justify-center"
+        class="w-full flex h-auto flex-wrap mt-[30px] bg-[#1C1E53] dark:bg-[#101237] justify-center px-[30px] mb-[10px] pb-[30px]"
       >
-        <div class="tab:w-[40%] h-[200px] mx-auto">
-          <div class="w-full mt-[40px] tab:pl-[60px]">
+        <div class="tab:w-[40%] mobile:w-full h-auto mx-auto p-5">
+          <div class="w-full mt-[40px]">
             <img src="./public/images/Logo.png" alt="" />
           </div>
-          <div class="w-full mt-[20px] text-[#fff] tab:pl-[60px] text-[15px]">
-            <p class="w-[380px]">
+          <div class="w-full mt-[20px] text-[#fff] text-[15px]">
+            <p class="max-w-[380px] w-full">
               We are always open to discuss your project and improve your online
               presence.
             </p>
           </div>
           <div
-            class="w-[80%] mobile:min-w-[450px] tab:min-w-[480px] bg-[#FCD980] mx-auto flex flex-row h-[80px] tab:p-[10px] mt-[20px] mobile:ml-[0px] tab:mx-auto mb-[20px] rounded-[9px]"
+            class="w-[80%] mobile:w-auto mobile:max-w-[350px] tab:min-w-[400px] bg-[#FCD980] mx-auto flex justify-left text-left tab:flex-row mobile:flex-col h-auto p-[10px] tab:p-[10px] mt-[20px] mobile:ml-[0px] rounded-[9px] gap-x-[10px] gap-y-[10px]"
           >
             <div
-              class="w-[45%] flex flex-col text-[#282938]  mx-auto"
+              class="tab:w-[48%] flex flex-col mobile:w-full pl-[10px] text-[#282938]"
             >
               <h4 class="font-medium text-[16px]">Email me at</h4>
               <p class="block">contact@website.com</p>
             </div>
             <div
-              class="w-[45%] flex flex-col text-[#282938]  mx-auto"
+              class="tab:w-[43%] flex flex-col mobile:w-full pl-[10px] text-[#282938]"
             >
               <h4 class="font-medium text-[16px]">Call us</h4>
-              <p class=" ">0927 6277 28525</p>
+              <p class="block">0927 6277 28525</p>
             </div>
           </div>
         </div>
-        <div
-          class="mobile: tab:w-[40%] h-[200px] mx-auto text-[#fff] mb-[20px]"
-        >
-          <h2 class="w-full pl-[10px] text-[28px] mt-[40px] font-medium">
+        <div class="mobile:w-full tab:w-[40%] h-auto mx-auto text-[#fff]">
+          <h2 class="w-full pl-[20px] text-[28px] tab:mt-[50px] font-medium">
             Lets Talk!
           </h2>
-          <p class="w-[400px] opacity-50 pl-[10px] text-[13px]">
+          <p class="max-w-[400px] w-full opacity-50 pl-[20px] text-[13px]">
             We are always open to discuss your project, improve your online
             presence and help with your UX/UI design challenges.
           </p>
           <div
-            class="flex flex-row flex-nowrap gap-x-[20px] pl-[10px] mt-[10px]"
+            class="flex flex-row flex-nowrap gap-x-[20px] pl-[20px] mt-[10px]"
           >
             <img src="./public/images/icon/1.png" alt="" />
             <img src="./public/images/icon/2.png" alt="" />
@@ -650,45 +471,44 @@
             <img src="./public/images/icon/4.png" alt="" />
           </div>
         </div>
-        <div
-          class="w-full bg-[#fff] dark:bg-[#1C1E53] flex text-[#282938] dark:text-[#fff] pb-[20px]"
+      </div>
+      <div
+        class="w-full bg-[#fff] dark:bg-[#1C1E53] flex jestify-start text-[#282938] dark:text-[#fff]"
+      >
+        <nav
+          class="flex flex-row tab:gap-x-5 mobile:gap-x-3 w-full box-border justify-end pr-[20px] tab:leading-[28px] font-medium text-center"
         >
-          <div class="w-[50%]"><p>Copyright 2022, Finsweet.com</p></div>
-          <nav
-            class="tab:flex mobile:hidden flex-row gap-x-5 w-[50%] box-border justify-end pr-[20px] leading-[28px] font-medium text-center"
+          <a
+            href="./index.html"
+            class="block h-7 w-fit items-center hover:border-b-2 hover:border-[#BBBBCB] tab:text-sm mobile:text-[13px]"
+            >Home</a
           >
-            <a
-              href="./index.html"
-              class="block h-7 w-fit items-center hover:border-b-2 hover:border-[#BBBBCB] text-sm"
-              >Home</a
-            >
-            <a
-              href="./aboutus.html"
-              class="block h-7 min-w-fit hover:border-b-2 text-center text-sm hover:border-[#BBBBCB]"
-              >About us</a
-            >
-            <a
-              href="./features.html"
-              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
-              >Features</a
-            >
-            <a
-              href="./pricing.html"
-              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
-              >Pricing</a
-            >
-            <a
-              href="./FAQ.html"
-              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
-              >FAQ</a
-            >
-            <a
-              href="./blog.html"
-              class="block h-7 hover:border-b-2 text-sm hover:border-[#BBBBCB]"
-              >Blog</a
-            >
-          </nav>
-        </div>
+          <a
+            href="./aboutus.html"
+            class="block h-7 min-w-fit hover:border-b-2 text-center tab:text-sm mobile:text-[13px] hover:border-[#BBBBCB]"
+            >About us</a
+          >
+          <a
+            href="./features.html"
+            class="block h-7 hover:border-b-2 tab:text-sm mobile:text-[13px] hover:border-[#BBBBCB]"
+            >Features</a
+          >
+          <a
+            href="./pricing.html"
+            class="block h-7 hover:border-b-2 tab:text-sm mobile:text-[13px] hover:border-[#BBBBCB]"
+            >Pricing</a
+          >
+          <a
+            href="./FAQ.html"
+            class="block h-7 hover:border-b-2 tab:text-sm mobile:text-[13px] hover:border-[#BBBBCB]"
+            >FAQ</a
+          >
+          <a
+            href="./blog.html"
+            class="block h-7 hover:border-b-2 tab:text-sm mobile:text-[13px] hover:border-[#BBBBCB]"
+            >Blog</a
+          >
+        </nav>
       </div>
       <!--end footer -->
     </div>
@@ -701,30 +521,28 @@
 
     <!--end wrapper -->
     <!--end project -->
-    <script>
-      const menuButton = document.getElementById("menuButton");
-      const menu = document.getElementById("menu");
-      const closeButton = document.getElementById("closeButton");
-
-      menuButton.addEventListener("click", () => {
-        menu.classList.toggle("active");
-      });
-
-      closeButton.addEventListener("click", () => {
-        menu.classList.remove("active");
-      });
+    <!--icon script  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    >
     </script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    >
+    </script>
+    <!-- end icon script -->
+    <!-- menu script -->
     <script>
-      function toggleAnswer(answerId) {
-        const answer = document.getElementById(answerId);
-
-        if (answer.style.display === "none" || answer.style.display === "") {
-          answer.style.display = "block";
-        } else {
-          answer.style.display = "none";
-        }
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[60px]");
       }
     </script>
+    <!--end menu script -->
+
     <script>
       let btn = document.querySelector(".btn");
       btn.addEventListener("click", function () {

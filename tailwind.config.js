@@ -5,15 +5,17 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins:['Poppins','sans-serif'],
+        poppins: ['Poppins'],
       }
     },
     screens: {
       'mobile' : '340px',
-      'tab' : '768px',
+      'tab' : '858px',
       'desk' : '1024px',
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }
 
