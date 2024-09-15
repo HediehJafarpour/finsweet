@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finsweet-Home</title>
     <link rel="stylesheet" href="./public/css/main.css" />
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+      .swiper-wrapper {
+        width: 100%;
+        height: max-content !important;
+        padding-bottom: 64px !important;
+        -webkit-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+        position: relative;
+      }
+      .swiper-pagination-bullet {
+        background: #4f46e5;
+      }
+    </style>
   </head>
 
   <body>
@@ -242,7 +260,6 @@
       <!-- end how it work -->
       <!-- our work -->
 
-    
       <div
         class="w-[100%] bg-[#ffff] dark:bg-[#101237] flex flex-wrap tab:flex-row mobile:flex-col h-fit pb-[20px] box-border pt-[70px] itemes-center gap-x-[10px] tab:pl-[50px]"
       >
@@ -261,12 +278,16 @@
             />View more</a
           >
         </div>
-        <div class="w-[100%] flex justify-center itemes-center mobile:flex-col flex-wrap gap-[40px] tab:flex-row">
-          <div class="w-[70%] max-w-[846px] relative flex justify-center mobile:mx-auto desk:mx-0   overflow-hidden ">
+        <div
+          class="w-[100%] flex justify-center itemes-center mobile:flex-col flex-wrap gap-[40px] tab:flex-row"
+        >
+          <div
+            class="w-[70%] max-w-[846px] relative flex justify-center mobile:mx-auto desk:mx-0 overflow-hidden"
+          >
             <div
-              class="absolute top-0 left-[0px] h-full w-[45%]  bg-indigo-950 bg-opacity-75 flex flex-col tab:gap-y-[10px] mobile:gap-y-[5px] items-end mobile:p-[5px] tab:p-[18px] desk:max-w-[30%] overflow-hidden  "
+              class="absolute top-0 left-[0px] h-full w-[45%] bg-indigo-950 bg-opacity-75 flex flex-col tab:gap-y-[10px] mobile:gap-y-[5px] items-end mobile:p-[5px] tab:p-[18px] desk:max-w-[30%] overflow-hidden"
             >
-              <div class="h-[40%] "></div>
+              <div class="h-[40%]"></div>
               <h3
                 class="text-[#ffff] tab:text-[24px] font-medium mobile:text-[10px]"
               >
@@ -287,42 +308,41 @@
                 />Get in touch with us</a
               >
             </div>
-            <div class="desk:w-[846px]  ">
-              <img
-                src="./public/images/1.jpg"
-                class=" h-auto"
-                alt=""
-              />
-
+            <div class="desk:w-[846px]">
+              <img src="./public/images/1.jpg" class="h-auto" alt="" />
             </div>
           </div>
-          <div class="desk:w-[30%] w-full  flex flex-col gap-[20px] overflow-hidden group ">
-            <div class="relative w-[70%] tab:w-[405px] overflow-hidden bg-[#2b2b2b] mobile:mx-auto desk:mx-0 ">
+          <div
+            class="desk:w-[30%] w-full flex flex-col gap-[20px] overflow-hidden group"
+          >
+            <div
+              class="relative w-[70%] tab:w-[405px] overflow-hidden bg-[#2b2b2b] mobile:mx-auto desk:mx-0"
+            >
               <img
-                class=" mx-auto "
+                class="mx-auto"
                 src="./public/images/card/Rectangle 1313.png"
                 alt=""
               />
-              <div class="w-full flex h-full absolute top-0 bg-opacity-70 bg-[#4B4F78] left-[-100%] group-hover:left-0 duration-500 ease-to-out flex-col pl-[40px]  ">
-                <p class="w-full mobile:max-w-[150px] tab:max-w-[250px] mobile:mt-[50px] tab:mt-[120px] text-[23px] font-semibold text-[#fff] leading-[20px] ">Unisaas Website Design</p>
-                <a
-                href="./Work.html"
-                class="block w-[100%] h-[28px] tab:text-[12px] mobile:text-[5px] flex flex-row-reverse text-[#FCD980] tab:gap-x-2 mobile:gap-x-1 items-center mt-[5px] text-[#2405F2] mobile:justify-end"
-                ><img
-                  src="./public/images/svg/yellow-arrow.svg"
-                  class="tab:w-[18px] mobile:w-[5px]"
-                />View portfolio</a
+              <div
+                class="w-full flex h-full absolute top-0 bg-opacity-70 bg-[#4B4F78] left-[-100%] group-hover:left-0 duration-500 ease-to-out flex-col pl-[40px]"
               >
+                <p
+                  class="w-full mobile:max-w-[150px] tab:max-w-[250px] mobile:mt-[50px] tab:mt-[120px] text-[23px] font-semibold text-[#fff] leading-[20px]"
+                >
+                  Unisaas Website Design
+                </p>
+                <a
+                  href="./Work.html"
+                  class="block w-[100%] h-[28px] tab:text-[12px] mobile:text-[5px] flex flex-row-reverse text-[#FCD980] tab:gap-x-2 mobile:gap-x-1 items-center mt-[5px] text-[#2405F2] mobile:justify-end"
+                  ><img
+                    src="./public/images/svg/yellow-arrow.svg"
+                    class="tab:w-[18px] mobile:w-[5px]"
+                  />View portfolio</a
+                >
               </div>
-
             </div>
-            <div class="tab:w-[405px] w-[70%] mobile:mx-auto desk:mx-0 ">
-              <img
-                class=" mx-auto"
-                src="./public/images/card/Card.png"
-                alt=""
-              />
-
+            <div class="tab:w-[405px] w-[70%] mobile:mx-auto desk:mx-0">
+              <img class="mx-auto" src="./public/images/card/Card.png" alt="" />
             </div>
           </div>
         </div>
@@ -351,7 +371,7 @@
             class="flex mobile:flex-col desk:flex-row desk:gap-x-[20px] gap-y-[20px] px-[50px]"
           >
             <div
-              class="bg-[#ffff] dark:bg-[#101237] flex flex-col gap-y-[5px] transition ease-in-out delay-150 hover:-translate-y-1 tab:hover:scale-110 duration-300 items-start max-w-[405px] mobile:min-w-[330px] h-auto text-left mx-auto py-[40px] px-[40px]"
+              class="bg-[#ffff] dark:bg-[#101237] flex flex-col gap-y-[5px] transition ease-in-out delay-150 hover:-translate-y-1 tab:hover:scale-110 duration-300 items-start max-w-[405px] mobile:min-w-[310px] h-auto text-left mx-auto py-[40px] px-[40px]"
             >
               <img
                 class="w-[32px]"
@@ -451,13 +471,13 @@
       <!--end features -->
       <!--testimonias -->
       <div
-        class="w-full flex mobile:flex-col tab:flex-row bg-[#F4F6FC] dark:bg-[#1C1E53] itemes-center gap-x-[20px] mt-[50px] mb-[100px]"
+        class="w-full flex mobile:flex-col desk:flex-row bg-[#F4F6FC] dark:bg-[#1C1E53] itemes-center gap-x-[20px] mt-[50px] mb-[100px]"
       >
         <div
-          class="w-[20%] m-[20px] gap-x-[15px] mobile:mx-[30px] tab:mx-auto min-w-[300px]"
+          class="desk:w-[20%] m-[20px] gap-x-[15px] mobile:mx-[30px] tab:mx-auto min-w-[300px]"
         >
           <h3
-            class="text-[38px] w-fit text-[#282938] dark:text-[#fff] font-medium leading-[56px]"
+            class="text-[38px] mobile:w-full desk:w-fit text-[#282938] dark:text-[#fff] font-medium leading-[56px]"
           >
             What our clients say about us
           </h3>
@@ -466,9 +486,83 @@
             sed
           </p>
         </div>
-        <div class="w-full tab:w-[50%] mx-auto dark:bg-[#FCD980] rounded-[8px] p-4  max-h-[300px] ">
-         <img src="./public/images/Content.png" alt=""> 
-         
+        <div
+          class="w-full desk:w-[40%] relative mx-auto  rounded-[8px] p-4h-[300px]"
+        >
+          <div class="w-full ">
+            <div class="swiper default-carousel swiper-container text-[#1c1e53] dark:text-[#fff] ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide   ">
+                  <div
+                    class=" rounded-2xl h-96 px-[90px] flex justify-center items-center flex-col"
+                  >
+                    <span class="text-2xl font-semibold  "
+                      >"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."
+                    </span>
+                    <div class="flex flex-row w-full mt-[30px] gap-x-[10px]">
+                      <img class="w-[52px] rounded-full" src="./public/images/profile/1.png" alt="">
+                      <div class="flex flex-col font-semibold">
+                        <span class="text-[18px]">Jenny Wilson</span>
+                        <span class="text-[12px] pl-[5px]">Vice President</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide   ">
+                  <div
+                    class=" rounded-2xl h-96 px-[90px] flex justify-center items-center flex-col"
+                  >
+                    <span class="text-2xl font-semibold  "
+                      >"Great industry leaders are not the real heroes of stock market"
+                    </span>
+                    <div class="flex flex-row w-full mt-[30px] gap-x-[10px]">
+                      <img class="w-[52px] rounded-full" src="./public/images/profile/2.png" alt="">
+                      <div class="flex flex-col font-semibold">
+                        <span class="text-[18px]">Johnatan Doeting</span>
+                        <span class="text-[12px] pl-[5px]">Vice President</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide   ">
+                  <div
+                    class=" rounded-2xl h-96 px-[90px] flex justify-center items-center flex-col"
+                  >
+                    <span class="text-2xl font-semibold  "
+                      >"  This is a awsome website.I would love to come back."
+                    </span>
+                    <div class="flex flex-row w-full mt-[30px] gap-x-[10px]">
+                      <img class="w-[52px] rounded-full" src="./public/images/profile/3.png" alt="">
+                      <div class="flex flex-col font-semibold">
+                        <span class="text-[18px]">Jenny Wilson</span>
+                        <span class="text-[12px] pl-[5px]">Vice President</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div
+                class="flex items-center gap-8 lg:justify-start justify-center"
+              >
+                <button
+                  id="slider-button-left"
+                  class="swiper-button-prev group !p-7 flex justify-center items-center absolute border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 hover:bg-indigo-600"
+                  data-carousel-prev
+                >
+                  
+                </button>
+                <button
+                  id="slider-button-right"
+                  class="swiper-button-next group !p-7 flex justify-center items-center absolute border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 hover:bg-indigo-600"
+                  data-carousel-next
+                >
+                  
+                </button>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
       <!--end testimonias -->
@@ -488,48 +582,95 @@
             Contact us for more info
           </p>
         </div>
-        <div class="max-w-lg tab:mx-auto overflow-hidden flex flex-col gap-[5px] ">
-          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0 ">
+        <div
+          class="max-w-lg tab:mx-auto overflow-hidden flex flex-col gap-[5px]"
+        >
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium  "><span class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500 ">1</span>How much time does it take?</div>
+            <div
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
+            >
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >1</span
+              >How much time does it take?
+            </div>
             <div class="collapse-content">
-              <p class="pr-[10px] mobile:text-[10px] tab:text-sm " >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0 ">
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium  "><span class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500 ">2</span>What is your class naming convention?</div>
+            <div
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
+            >
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >2</span
+              >What is your class naming convention?
+            </div>
             <div class="collapse-content">
-              <p class="pr-[10px] mobile:text-[10px] tab:text-sm " >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0 ">
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium  "><span class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500 ">3</span>How do you communicat?</div>
+            <div
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
+            >
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >3</span
+              >How do you communicat?
+            </div>
             <div class="collapse-content">
-              <p class="pr-[10px] mobile:text-[10px] tab:text-sm " >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0 ">
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium  "><span class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500 ">4</span>I have a bigger project can you handel it?</div>
+            <div
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
+            >
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >4</span
+              >I have a bigger project can you handel it?
+            </div>
             <div class="collapse-content">
-              <p class="pr-[10px] mobile:text-[10px] tab:text-sm " >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0 ">
+          <div class="collapse collapse-plus bg-[#fff] text-[#2b2b2b] px-0">
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium  "><span class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500 ">5</span> What is your class naming convection?</div>
+            <div
+              class="collapse-title mobile:text-[14px] tab:text-[18px] font-medium"
+            >
+              <span
+                class="text-[20px] text-bold leading-[20px] mr-[10px] text-blue-500"
+                >5</span
+              >
+              What is your class naming convection?
+            </div>
             <div class="collapse-content">
-              <p class="pr-[10px] mobile:text-[10px] tab:text-sm " >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="pr-[10px] mobile:text-[10px] tab:text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
-          
         </div>
       </div>
       <!-- end fAQ -->
@@ -618,7 +759,7 @@
             class="flex w-[350px] mobile:mx-auto border-2 border-opacity-50 p-[20px] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-100 duration-300 desk:mx-[0] text-[#282938] dark:text-[#fff] flex-col gap-y-[15px] justify-center"
           >
             <img
-              class="max-w-[405px] mobile:min-w-[330px]"
+              class="max-w-[405px] mobile:min-w-[310px]"
               src="./public/images/blog/1.jpg"
               alt=""
             />
@@ -640,15 +781,18 @@
               class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] leading-[25px] font-normal"
               ><img
                 src="./public/images/svg/arrow2.svg"
-                class="tab:w-[18px] mobile:w-[10px] block dark:hidden"/>
-              <img src="./public/images/svg/arrow.svg" class="w-[18px] hidden dark:block"
+                class="tab:w-[18px] mobile:w-[10px] block dark:hidden"
+              />
+              <img
+                src="./public/images/svg/arrow.svg"
+                class="w-[18px] hidden dark:block"
               />Read more</a
             >
           </div>
           <div
             class="flex w-[350px] mobile:mx-auto border-2 border-opacity-50 p-[20px] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-100 duration-300 desk:mx-[0] text-[#282938] dark:text-[#fff] flex-col gap-y-[15px] justify-center"
           >
-            <img class="w-[405px]" src="./public/images/blog/2.jpg" alt="" />
+            <img class="max-w-[405px] mobile:min-w-[310px]" src="./public/images/blog/2.jpg" alt="" />
             <h5 class="w-full opacity-70">19 Jan 2022</h5>
             <h4
               class="mobile:text-[20px] tab:text-[22px] mobile:leading-[25px] tab:leading-[28px] font-medium"
@@ -667,15 +811,18 @@
               class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] leading-[25px] font-normal"
               ><img
                 src="./public/images/svg/arrow2.svg"
-                class="tab:w-[18px] mobile:w-[10px] block dark:hidden"/>
-              <img src="./public/images/svg/arrow.svg" class="w-[18px] hidden dark:block"
+                class="tab:w-[18px] mobile:w-[10px] block dark:hidden"
+              />
+              <img
+                src="./public/images/svg/arrow.svg"
+                class="w-[18px] hidden dark:block"
               />Read more</a
             >
           </div>
           <div
             class="flex w-[350px] mobile:mx-auto border-2 border-opacity-50 p-[20px] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-100 duration-300 desk:mx-[0] text-[#282938] dark:text-[#fff] flex-col gap-y-[15px] justify-center"
           >
-            <img class="w-[405px]" src="./public/images/blog/3.jpg" alt="" />
+            <img class="max-w-[405px] mobile:min-w-[310px] " src="./public/images/blog/3.jpg" alt="" />
             <h5 class="w-full opacity-70">19 Jan 2022</h5>
             <h4
               class="mobile:text-[20px] tab:text-[22px] mobile:leading-[25px] tab:leading-[28px] font-medium"
@@ -694,8 +841,11 @@
               class="inline-block w-full h-[28px] tab:text-[13px] mobile:text-[8px] flex flex-row-reverse tab:gap-x-1 mobile:gap-x-1 justify-end mt-[5px] text-[#282938] dark:text-[#fff] leading-[25px] font-normal"
               ><img
                 src="./public/images/svg/arrow2.svg"
-                class="tab:w-[18px] mobile:w-[10px] block dark:hidden"/>
-              <img src="./public/images/svg/arrow.svg" class="w-[18px] hidden dark:block"
+                class="tab:w-[18px] mobile:w-[10px] block dark:hidden"
+              />
+              <img
+                src="./public/images/svg/arrow.svg"
+                class="w-[18px] hidden dark:block"
               />Read more</a
             >
           </div>
@@ -819,7 +969,21 @@
       }
     </script>
     <!--end menu script -->
-    
+
+    <!-- swiper -->
+    <script>
+      var swiper = new Swiper(".default-carousel", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
     <script>
       function toggleAnswer(answerId) {
@@ -838,6 +1002,5 @@
         document.body.classList.toggle("dark");
       });
     </script>
-    
   </body>
 </html>
