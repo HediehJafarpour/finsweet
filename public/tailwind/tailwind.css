@@ -11,6 +11,12 @@
     body{
         @apply font-[poppins]
     }
-
-
+}
+@layer components {
+    .swiper-wrapper {
+       @apply w-[100%] !max-h-max ease-linear pb-[64px] relative 
+    }
+    .swiper-pagination-bullet {
+        @apply bg-[#4f46e5]
+    }
 }
